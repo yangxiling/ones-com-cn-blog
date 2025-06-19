@@ -1,0 +1,87 @@
+// @import './normalize.scss';
+// @import './ocn.scss';
+// @import './variable.scss';
+// @import '@ones-cn/globalCss/animate.scss';
+// @import './components.scss';
+// @import '@ones-cn/globalCss/fonts.scss';
+// @import '@ones-cn/globalCss/hack.scss';
+// @import '@ones-cn/globalCss/normal.scss';
+// @import '@ones-cn/globalCss/ones-design.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  scroll-behavior: auto;
+}
+
+.ones-form-item-label > label {
+  font-size: 16px;
+}
+.ones-input-affix-wrapper {
+  padding: 8px 11px;
+  border-color: var(--gray-20);
+}
+.ones-input-affix-wrapper-focused {
+  border-color: var(--primary);
+}
+.ones-select:not(.ones-select-customize-input) .ones-select-selector {
+  height: auto;
+  padding: 5px 11px;
+  border-color: var(--gray-20);
+}
+.ones-input,
+.ones-input-group-addon {
+  border-color: var(--gray-20);
+}
+.ones-select-arrow,
+.ones-select-clear {
+  margin-top: 12px;
+}
+.ones-modal-content {
+  max-height: 100vh;
+}
+.ones-button.ones-button-background-ghost[disabled] {
+  height: 40px;
+  font-size: 16px;
+}
+.ones-form-item-control {
+  min-height: 60px;
+}
+
+.ones-input::placeholder {
+  color: var(--gray-50);
+}
+
+.ones-input-number-input::placeholder {
+  color: var(--gray-50);
+}
+.ones-select-dropdown {
+  padding: 5px 0;
+}
+.ones-select-item {
+  // padding: 0 10px;
+  line-height: 22px;
+  // min-height: 32px;
+  .ones-select-item-option-state {
+    svg {
+      margin-top: 3px;
+    }
+  }
+}
+.rc-virtual-list-holder {
+  max-height: 266px !important;
+}
+
+.custom-modal {
+  @media (max-width: 768px) {
+    .ones-button.ones-modal-close-button {
+      top: 20px;
+    }
+  }
+  @media (min-width: 768px) {
+    .ones-button.ones-modal-close-button {
+      top: 14px;
+    }
+  }
+}

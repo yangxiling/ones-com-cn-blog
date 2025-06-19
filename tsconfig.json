@@ -1,0 +1,19 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "include": ["src"],  
+  "exclude": [
+    "react-virtualized-auto-sizer",
+    "node_modules", "dist"
+  ],
+  "compilerOptions": {
+    "types": ["node"]
+  },
+}
