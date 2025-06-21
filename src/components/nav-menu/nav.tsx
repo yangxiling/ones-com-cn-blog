@@ -1,15 +1,18 @@
 import React from 'react';
-import {Menu, Button} from '@ones-design/core';
-import {Phone,ArrowDownOutline} from '@ones-design/icons';
-import styles from './nav-menu.module.scss';
+import {Button} from '@ones-design/core';
+import {Phone} from '@ones-design/icons';
+import styles from './nav.module.scss';
 import onesLogo from '../../images/ones-logo.svg';
 import infoTechInnovationIcon from '../../images/info-tech-innovation-icon.svg';
+import classnames from 'classnames';
+import { Menu } from './menu';
+// import {MenuPanel} from '../menu-panel/menu-panel';
 // import NavMenuPanel from '../nav-menu-panel';
 
 const menuItems = [
   {
     key: 'product',
-    label: <span style={{fontSize: '16px'}}>产品 <ArrowDownOutline /></span>,
+    label: <span style={{fontSize: '16px'}}>产品 </span>,
     children: [
       {key: 'product1', label: '产品一'},
       {key: 'product2', label: '产品二'},
@@ -17,7 +20,7 @@ const menuItems = [
   },
   {
     key: 'solution',
-    label: <span style={{fontSize: '16px'}}>解决方案 <ArrowDownOutline /></span>,
+    label: <span style={{fontSize: '16px'}}>解决方案 </span>,
 
     children: [
       {key: 'solution1', label: '解决方案一'},
@@ -26,7 +29,7 @@ const menuItems = [
   },
   {
     key: 'case',
-    label: <span style={{fontSize: '16px'}}>客户案例 <ArrowDownOutline /></span>,
+    label: <span style={{fontSize: '16px'}}>客户案例</span>,
 
     children: [
       {key: 'case1', label: '案例一'},
@@ -35,13 +38,13 @@ const menuItems = [
   },
   {
     key: 'support',
-    label: <span style={{fontSize: '16px'}}>服务与支持 <ArrowDownOutline /></span>,
+    label: <span style={{fontSize: '16px'}}>服务与支持</span>,
     children: [
       {key: 'support1', label: '支持一'},
       {key: 'support2', label: '支持二'},
     ],
   },
-  {key: 'pricing', label: <span style={{fontSize: '16px'}}>产品定价</span>},
+  {key: 'pricing', label: <a style={{fontSize: '16px'}} className={styles.pricing} href='https://ones.cn/pricing'>产品定价</a>},
 
   {
     key: 'xinchuang', label: <div style={{color: '#1890ff'}}>
@@ -63,14 +66,15 @@ export const NavMenu = React.memo(() => {
   };
 
   return (
-    <nav className={styles.container}>
+    <nav id="nav-container" className={styles.container}>
       <div className={styles.navbar}>
         <div className={styles.left}>
           <a className={styles.logo} href="https://ones.cn">
             <img src={onesLogo} alt="ONES" />
           </a>
 
-          <Menu mode="horizontal" className={styles.menu} items={menuItems} />
+          {/* <Menu mode="horizontal" className={styles.menu} items={menuItems} /> */}
+          <Menu items={menuItems} />
         </div>
         <div className={styles.right}>
           <Button

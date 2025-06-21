@@ -1,0 +1,33 @@
+.menu {
+  flex: 1;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  &:hover {
+    color: var(--blue-700);
+  }
+}
+
+.menuItemIcon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.menuPanel {
+  width: 100vw;
+}

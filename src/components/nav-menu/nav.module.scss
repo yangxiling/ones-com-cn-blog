@@ -32,22 +32,8 @@
 
 .logo {
   display: inline-block;
+  margin-right: 20px;
 }
-
-.menu {
-  flex: 1;
-  width: 100%;
-  font-size: 16px !important;
-}
-
-.menu :global(.ones-menu-horizontal) {
-  border: none;
-  &::after {
-    content: '' !important;
-    display: none !important;
-  }
-}
-
 
 .right {
   display: flex;

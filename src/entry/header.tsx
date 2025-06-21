@@ -1,5 +1,5 @@
 import {StrictMode } from 'react';
-import { NavMenu } from '../components/nav-menu/nav-menu';
+import { NavMenu } from '../components/nav-menu/nav';
 import { createRoot } from 'react-dom/client';
 import '../styles/global.scss';
 

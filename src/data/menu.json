@@ -1,0 +1,739 @@
+{
+  "menuProduct": {
+    "fieldGroupName": "menu_product",
+    "name": "产品",
+    "menu": {
+      "app": {
+        "name": "应用",
+        "menu": [
+          {
+            "name": "ONES TestCase",
+            "link": "/products/testcase",
+            "desc": "测试管理",
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/TestCaseLogo-1.png"
+            }
+          },
+          {
+            "name": "ONES Plan",
+            "link": "/products/plan",
+            "desc": "项目集管理",
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/PlanLogo-1.png"
+            }
+          },
+          {
+            "name": "ONES Performance",
+            "link": "/products/performance",
+            "desc": "效能管理",
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/PerformanceLogo-1.png"
+            }
+          },
+          {
+            "name": "ONES Automation",
+            "link": "/products/automation",
+            "desc": "流程自动化",
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/AutomationLogo-1.png"
+            }
+          },
+          {
+            "name": "ONES Desk",
+            "link": "/products/desk",
+            "desc": "工单管理",
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/DeskLogo-1.png"
+            }
+          },
+          {
+            "name": "ONES Account",
+            "link": "/products/account",
+            "desc": "企业级帐号目录",
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/AccountLogo-1.png"
+            }
+          },
+          {
+            "name": "ONES Task",
+            "link": "/products/task",
+            "desc": "任务协作",
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/TaskLogo.png"
+            }
+          },
+          {
+            "name": "ONES Resource",
+            "link": "/products/resource",
+            "desc": "资源管理",
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/TimeLogo-1.png"
+            }
+          }
+        ]
+      },
+      "base": {
+        "name": "基础产品",
+        "menu": [
+          {
+            "name": "ONES Project",
+            "link": "/products/project",
+            "desc": "项目管理",
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/ProjectLogo-1.png"
+            }
+          },
+          {
+            "name": "ONES Wiki",
+            "link": "/products/wiki",
+            "desc": "知识库管理",
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/WikiLogo-2.png"
+            }
+          }
+        ]
+      },
+      "otherProduct": {
+        "isShow": true,
+        "name": "ONES AI",
+        "menu": [
+          {
+            "name": "ONES Copilot",
+            "link": "/products/ai",
+            "desc": "AI 助手",
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/ONES_Copilot.png"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "menuSolution": {
+    "fieldGroupName": "menu_solution",
+    "name": "解决方案",
+    "menu": [
+      {
+        "name": "行业",
+        "menu": [
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDo3Mzk3",
+              "slug": "financial",
+              "acfSolution": {
+                "solutionTitle": "金融业研发管理",
+                "solutionType": "按行业"
+              }
+            },
+            "icon": null,
+            "desc": null
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDo3NDAw",
+              "slug": "intelligent-manufacturing",
+              "acfSolution": {
+                "solutionTitle": "智能制造研发管理",
+                "solutionType": "按行业"
+              }
+            },
+            "icon": null,
+            "desc": null
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDo3NDc2",
+              "slug": "enterprise-services",
+              "acfSolution": {
+                "solutionTitle": "企业服务研发管理",
+                "solutionType": "按行业"
+              }
+            },
+            "icon": null,
+            "desc": null
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDo3NDcz",
+              "slug": "automobile",
+              "acfSolution": {
+                "solutionTitle": "汽车研发项目管理",
+                "solutionType": "按行业"
+              }
+            },
+            "icon": null,
+            "desc": null
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDo3NDc0",
+              "slug": "equipment-manufacturing",
+              "acfSolution": {
+                "solutionTitle": "装备制造项目管理",
+                "solutionType": "按行业"
+              }
+            },
+            "icon": null,
+            "desc": null
+          }
+        ]
+      },
+      {
+        "name": "场景",
+        "menu": [
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDoyMjUz",
+              "slug": "scrum",
+              "acfSolution": {
+                "solutionTitle": "敏捷研发管理",
+                "solutionType": "按场景"
+              }
+            },
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/敏捷研发.png"
+            },
+            "desc": "更好更快地发布产品"
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDoyNTYx",
+              "slug": "wiki",
+              "acfSolution": {
+                "solutionTitle": "企业知识库管理",
+                "solutionType": "按场景"
+              }
+            },
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/知识库管理.png"
+            },
+            "desc": "统一管理业务信息和企业知识"
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDoyNTgz",
+              "slug": "waterfall",
+              "acfSolution": {
+                "solutionTitle": "瀑布项目管理",
+                "solutionType": "按场景"
+              }
+            },
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/Group-2902.png"
+            },
+            "desc": "轻松规划项目和跟踪进度"
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDoyNjEx",
+              "slug": "testcase",
+              "acfSolution": {
+                "solutionTitle": "测试管理",
+                "solutionType": "按场景"
+              }
+            },
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/测试管理.png"
+            },
+            "desc": "快速交付高质量产品"
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDoyNjE2",
+              "slug": "performance",
+              "acfSolution": {
+                "solutionTitle": "研发效能管理",
+                "solutionType": "按场景"
+              }
+            },
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/研发效能管理.png"
+            },
+            "desc": "度量分析团队效率与产能"
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDoyNjI2",
+              "slug": "devops",
+              "acfSolution": {
+                "solutionTitle": "DevOps",
+                "solutionType": "按场景"
+              }
+            },
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/DevOps-1.png"
+            },
+            "desc": "可持续地交付端到端的价值"
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDoyNjc4",
+              "slug": "resource-time",
+              "acfSolution": {
+                "solutionTitle": "资源和工时管理",
+                "solutionType": "按场景"
+              }
+            },
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/资源和工时管理.png"
+            },
+            "desc": "高效合理地规划和利用团队资源"
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDoyNjc5",
+              "slug": "desk",
+              "acfSolution": {
+                "solutionTitle": "服务台和工单管理",
+                "solutionType": "按场景"
+              }
+            },
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/服务台和工单管理.png"
+            },
+            "desc": "轻松响应与解决客户反馈"
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDo3MzQ3",
+              "slug": "ipd",
+              "acfSolution": {
+                "solutionTitle": "IPD 研发管理",
+                "solutionType": "按场景"
+              }
+            },
+            "icon": {
+              "sourceUrl": "/blog/uploads/2022/12/IPD-1.png"
+            },
+            "desc": "驱动企业创新增长"
+          }
+        ]
+      },
+      {
+        "name": "更多能力",
+        "menu": [
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDoyNzEw",
+              "slug": "development",
+              "acfSolution": {
+                "solutionTitle": "开放能力",
+                "solutionType": "按更多能力"
+              }
+            },
+            "icon": null,
+            "desc": null
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDoyNzMx",
+              "slug": "deployment",
+              "acfSolution": {
+                "solutionTitle": "部署方式",
+                "solutionType": "按更多能力"
+              }
+            },
+            "icon": null,
+            "desc": null
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDoyNjY0",
+              "slug": "data-import",
+              "acfSolution": {
+                "solutionTitle": "从 Jira 迁移到 ONES",
+                "solutionType": "按更多能力"
+              }
+            },
+            "icon": null,
+            "desc": null
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDoyNjY1",
+              "slug": "security-and-compliance",
+              "acfSolution": {
+                "solutionTitle": "安全与合规",
+                "solutionType": "按更多能力"
+              }
+            },
+            "icon": null,
+            "desc": null
+          },
+          {
+            "fieldGroupName": "menu",
+            "resolve": {
+              "id": "cG9zdDoyNjcw",
+              "slug": "information-technology-innovation",
+              "acfSolution": {
+                "solutionTitle": "信创",
+                "solutionType": "按更多能力"
+              }
+            },
+            "icon": null,
+            "desc": null
+          }
+        ]
+      }
+    ]
+  },
+  "menuCustomer": {
+    "fieldGroupName": "menu_customer",
+    "name": "客户案例",
+    "menu": [
+      {
+        "name": "金融",
+        "menu": [
+          {
+            "customerInfo": {
+              "id": "cG9zdDoyNDM1",
+              "slug": "nongshanghang",
+              "acfCustomerCase": {
+                "customerCaseCustomer": {
+                  "id": "cG9zdDoyNDIz",
+                  "acfCustomer": {
+                    "customerLogo": {
+                      "sourceUrl": "/blog/uploads/2022/12/深圳农商银行.png"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "customerInfo": {
+              "id": "cG9zdDoyNDU2",
+              "slug": "zijinbaoxian",
+              "acfCustomerCase": {
+                "customerCaseCustomer": {
+                  "id": "cG9zdDoyMzQ5",
+                  "acfCustomer": {
+                    "customerLogo": {
+                      "sourceUrl": "/blog/uploads/2022/12/紫金保险.png"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "customerInfo": {
+              "id": "cG9zdDoyNTg0",
+              "slug": "rongshuxinxi",
+              "acfCustomerCase": {
+                "customerCaseCustomer": {
+                  "id": "cG9zdDoyNTMw",
+                  "acfCustomer": {
+                    "customerLogo": {
+                      "sourceUrl": "/blog/uploads/2022/12/荣数信息.png"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "互联网",
+        "menu": [
+          {
+            "customerInfo": {
+              "id": "cG9zdDoyNDUw",
+              "slug": "lanchengxiongdi",
+              "acfCustomerCase": {
+                "customerCaseCustomer": {
+                  "id": "cG9zdDoyMzQ4",
+                  "acfCustomer": {
+                    "customerLogo": {
+                      "sourceUrl": "/blog/uploads/2022/12/Object.png"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "customerInfo": {
+              "id": "cG9zdDoyNDQw",
+              "slug": "xishanju",
+              "acfCustomerCase": {
+                "customerCaseCustomer": {
+                  "id": "cG9zdDoyMzUz",
+                  "acfCustomer": {
+                    "customerLogo": {
+                      "sourceUrl": "/blog/uploads/2022/12/西山居-1.png"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "customerInfo": {
+              "id": "cG9zdDoyNDg1",
+              "slug": "zhongnongwang",
+              "acfCustomerCase": {
+                "customerCaseCustomer": {
+                  "id": "cG9zdDoyMzU1",
+                  "acfCustomer": {
+                    "customerLogo": {
+                      "sourceUrl": "/blog/uploads/2022/12/中农网-1.png"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "智能硬件",
+        "menu": [
+          {
+            "customerInfo": {
+              "id": "cG9zdDoyMzU3",
+              "slug": "honghekeji",
+              "acfCustomerCase": {
+                "customerCaseCustomer": {
+                  "id": "cG9zdDoyMjg4",
+                  "acfCustomer": {
+                    "customerLogo": {
+                      "sourceUrl": "/blog/uploads/2022/12/鸿合科技-2.png"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "customerInfo": {
+              "id": "cG9zdDoyNTA5",
+              "slug": "youaizhihe",
+              "acfCustomerCase": {
+                "customerCaseCustomer": {
+                  "id": "cG9zdDoyNTA2",
+                  "acfCustomer": {
+                    "customerLogo": {
+                      "sourceUrl": "/blog/uploads/2022/12/优艾智合.png"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "customerInfo": {
+              "id": "cG9zdDoyNDQ1",
+              "slug": "huayiruanjian",
+              "acfCustomerCase": {
+                "customerCaseCustomer": {
+                  "id": "cG9zdDoyNDI1",
+                  "acfCustomer": {
+                    "customerLogo": {
+                      "sourceUrl": "/blog/uploads/2022/12/华依科技.png"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "更多行业",
+        "menu": [
+          {
+            "customerInfo": {
+              "id": "cG9zdDoyNDkw",
+              "slug": "aozhe",
+              "acfCustomerCase": {
+                "customerCaseCustomer": {
+                  "id": "cG9zdDoyMzUx",
+                  "acfCustomer": {
+                    "customerLogo": {
+                      "sourceUrl": "/blog/uploads/2022/12/奥哲.png"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "customerInfo": {
+              "id": "cG9zdDozMTQw",
+              "slug": "zhongguodianxin",
+              "acfCustomerCase": {
+                "customerCaseCustomer": {
+                  "id": "cG9zdDoyNzQz",
+                  "acfCustomer": {
+                    "customerLogo": {
+                      "sourceUrl": "/blog/uploads/2022/12/中国电信-1.png"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "customerInfo": {
+              "id": "cG9zdDozMTQz",
+              "slug": "renminribao",
+              "acfCustomerCase": {
+                "customerCaseCustomer": {
+                  "id": "cG9zdDoyNzQ0",
+                  "acfCustomer": {
+                    "customerLogo": {
+                      "sourceUrl": "/blog/uploads/2022/12/人民日报.png"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "menuResource": {
+    "fieldGroupName": "menu_resource",
+    "name": "服务与支持",
+    "menu": [
+      {
+        "menu": [
+          {
+            "name": "帮助中心",
+            "link": "/helpcenter",
+            "isBlank": null
+          },
+          {
+            "name": "帮助手册",
+            "link": "https://guide.ones.pro/wiki/#/team/LBrdb4wE/space/6XDAYB1a/page/7yeSmMVA",
+            "isBlank": true
+          }
+        ],
+        "name": "用好 ONES"
+      },
+      {
+        "menu": [
+          {
+            "name": "服务团队",
+            "link": "/services/team",
+            "isBlank": null
+          },
+          {
+            "name": "服务介绍",
+            "link": "/service_success",
+            "isBlank": null
+          }
+        ],
+        "name": "客户支持"
+      },
+      {
+        "menu": [
+          {
+            "name": "开放合作",
+            "link": "/partners",
+            "isBlank": null
+          },
+          {
+            "name": "关于 ONES",
+            "link": "/aboutus",
+            "isBlank": null
+          },
+          {
+            "name": "加入 ONES",
+            "link": "https://app.mokahr.com/social-recruitment/oneshr/58057#/",
+            "isBlank": null
+          },
+          {
+            "name": "联系我们",
+            "link": "/contactus",
+            "isBlank": null
+          }
+        ],
+        "name": "更多"
+      }
+    ],
+    "info": {
+      "title": "ONES 资讯",
+      "recommend": {
+        "blog": {
+          "acfBlogRecommend": {
+            "blogRecommendBlogs": [
+              {
+                "title": "即日起，ONES 团队版50人以下免费",
+                "blogType": {
+                  "name": "产品动态"
+                },
+                "photo": {
+                  "sourceUrl": "/blog/uploads/2022/12/-1-2-scaled-e1672843678421.jpeg"
+                },
+                "relatedBlog": {
+                  "id": "cG9zdDoxOTE=",
+                  "link": "https://wp-blogdev.myones.net/blog/ones-news/ones-news-01",
+                  "slug": "ones-news-01",
+                  "categories": {
+                    "edges": [
+                      {
+                        "node": {
+                          "slug": "ones-news"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "title": "ONES 收购 SegmentFault 思否，共建高质量开发者社区",
+                "blogType": {
+                  "name": "ONES 资讯"
+                },
+                "photo": {
+                  "sourceUrl": "/blog/uploads/2022/12/ONES-资讯1-1-1-e1672843711311.png"
+                },
+                "relatedBlog": {
+                  "id": "cG9zdDoxNTE=",
+                  "link": "https://wp-blogdev.myones.net/blog/ones-news/ones-news-06",
+                  "slug": "ones-news-06",
+                  "categories": {
+                    "edges": [
+                      {
+                        "node": {
+                          "slug": "ones-news"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "menuPrice": {
+    "fieldGroupName": "menu_price",
+    "link": "/pricing",
+    "name": "产品定价"
+  }
+}
