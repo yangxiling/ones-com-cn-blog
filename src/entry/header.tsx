@@ -4,9 +4,13 @@ import { createRoot } from 'react-dom/client';
 import '../styles/global.scss';
 
 const mountNav = (elementId: string) => {
-  const container = document.getElementById(elementId);
-  if (!container) return;
+  console.log('0headercontainer', elementId);
 
+  const container = document.getElementById(elementId);
+  console.log('1-headercontainer', container);
+
+  if (!container) return;
+console.log('2-headercontainer',container);
   const root = createRoot(container);
   root.render(
     <StrictMode>
@@ -32,5 +36,3 @@ if (import.meta.env.DEV) {
     mountNav('header-root');
   });
 }
-
-export { mountNav as Header };

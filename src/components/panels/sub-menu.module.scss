@@ -1,0 +1,14 @@
+.title {
+  color: var(--Gray-80, #7E7F81);
+  font-family: "ONES Sans";
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}

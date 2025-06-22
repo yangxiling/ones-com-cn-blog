@@ -9,6 +9,7 @@
 }
 
 .menuItem {
+  height: 52px;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -28,6 +29,11 @@
   transform: rotate(180deg);
 }
 
+:global(.ones-popover-container) {
+  padding: 0 !important;
+}
+
 .menuPanel {
   width: 100vw;
+  // height: 50vh;
 }

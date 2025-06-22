@@ -1,37 +1,34 @@
 .panel {
   display: flex;
+  justify-content: center;
   background: #fff;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  border-radius: 8px;
-  padding: 32px 40px;
   min-width: 900px;
-  position: absolute;
-  left: 0;
-  top: 64px;
-  z-index: 100;
+  margin: auto;
 }
-.left, .center, .right {
+
+.left {
   display: flex;
   flex-direction: column;
+  border-right: 1px solid #F0F0F2;
+  padding: 40px 40px 40px 0;
+
 }
-.left {
-  width: 200px;
-  margin-right: 40px;
+.group {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
-.center {
-  flex: 1;
-  margin-right: 40px;
-}
+
 .right {
-  width: 180px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding-left: 40px;
+  padding-top: 80px;
 }
-.groupTitle {
-  font-weight: bold;
-  margin-bottom: 12px;
-  color: #222;
-}
+
 .product, .app {
   display: flex;
   align-items: center;
@@ -71,12 +68,17 @@
 .qrcodeBox {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
 }
 .qrcode {
   width: 120px;
   height: 120px;
   margin-bottom: 8px;
+}
+.qrtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
 }
 .qrdesc {
   font-size: 13px;

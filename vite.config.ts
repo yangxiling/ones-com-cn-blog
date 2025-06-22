@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // 使用相对路径，适合 WordPress 主题集成
+  base: 'https://ones.cn/', // Public base path for production
   build: {
     outDir: 'dist',
     sourcemap: true,

@@ -7,6 +7,7 @@
 // @import '@ones-cn/globalCss/hack.scss';
 // @import '@ones-cn/globalCss/normal.scss';
 // @import '@ones-cn/globalCss/ones-design.scss';
+@use './normal.scss';
 
 @tailwind base;
 @tailwind components;
