@@ -38,7 +38,7 @@ export const MenuPanel: React.FC<{
 };
 
 const menuItemMap = new Map([
-  // ['menuProduct', (props: PanelProps) => <ProductMenuPanel {...props} />],
+  ['menuProduct', (props: PanelProps) => <ProductMenuPanel {...props} />],
   // ['menuSolution', (props: PanelProps) => <SolutionsPanel {...props} />],
   ['menuCustomer', (props: PanelProps) => <CustomerCasePanel {...props} />],
   // ['menuResource', (props: PanelProps) => <SupportsPanel {...props} />],

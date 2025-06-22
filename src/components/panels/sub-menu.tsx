@@ -88,7 +88,7 @@ export const SubMenu: React.FC<SubMenuItemType> = ({
   return (
     <div >
       <div className={styles.title}>{name}</div>
-      <div className={styles.content}>
+      <div className={menuContentClassName}>
         {menu?.map((item: MenuItem, index: number) => {
           const link = getLink(item);
           const isExternalLink = link?.startsWith('http');
@@ -98,8 +98,8 @@ export const SubMenu: React.FC<SubMenuItemType> = ({
 
           return (
             <a
+              className={submenuItemClassName}
               key={index}
-              className={classnames('ease-in-submenu', 'oac-no-underline')}
               onClick={() => onClick(item)}
               href={link}
               target={item.isBlank ? '_blank' : '_self'}
@@ -107,10 +107,9 @@ export const SubMenu: React.FC<SubMenuItemType> = ({
             >
               {onlyImg ? (
                 <img
-                  className={classnames(
-                    `oac-shadow xl:hover:oac-shadow-m oac-object-contain oac-mt-4 xl:oac-mt-0 oac-max-w-none oac-transition-shadow`,
+                  className={
                     submenuItemImgClassName
-                  )}
+                  }
                   height={60}
                   width={180}
                   alt={itemName}
@@ -124,10 +123,7 @@ export const SubMenu: React.FC<SubMenuItemType> = ({
                 </div>
               ) : (
                 <div
-                  className={classnames(
-                    'oac-items-center xl:oac-items-start oac-align-middle oac-px-0 oac-py-4 xl:oac-px-3 xl:oac-py-2 oac-rounded xl:hover:oac-bg-blue-5 oac-cursor-pointer oac-duration-300 oac-flex',
-                    submenuItemClassName
-                  )}
+                  className={ submenuItemClassName }
                 >
                   <div className={classnames('oac-h-[28px] oac-w-[28px] oac-mr-2', submenuItemImgClassName)}>
                     <img className='oac-align-top oac-object-cover !oac-w-full' src={itemIconUrl} alt={itemName} />
