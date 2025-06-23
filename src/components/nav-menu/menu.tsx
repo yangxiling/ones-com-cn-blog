@@ -41,10 +41,7 @@ const menuItemMap = new Map([
   ['menuProduct', (props: PanelProps) => <ProductMenuPanel {...props} />],
   ['menuSolution', (props: PanelProps) => <SolutionsPanel {...props} />],
   ['menuCustomer', (props: PanelProps) => <CustomerCasePanel {...props} />],
-  ['menuResource', (props: PanelProps) => {
-    console.log('fuwu', props)
-    return <SupportsPanel {...props} />;
-  }],
+  ['menuResource', (props: PanelProps) => <SupportsPanel {...props} />],
 ]);
 
 export const Menu: React.FC<{

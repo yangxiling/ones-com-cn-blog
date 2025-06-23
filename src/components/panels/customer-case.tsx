@@ -4,6 +4,7 @@ import {SubMenu} from './sub-menu';
 import type {MenuItem, CustomerInfo} from './sub-menu';
 import styles from './index.module.scss';
 import customerCaseStyles from './customer-case.module.scss';
+import { URL_CONFIG } from '../../const/url-config';
 
 
 interface CustomerMenu {
@@ -20,7 +21,6 @@ export const CustomerCasePanel = ({
   menu: CustomerMenu[];
   onPanelClose: () => void;
   }) => {
-  console.log('客户案例',menu);
   return (
     <div className={styles.panel}>
       <div className={styles.left}>
@@ -29,17 +29,18 @@ export const CustomerCasePanel = ({
             <SubMenu
               className={styles.subMenu}
               menuContentClassName={customerCaseStyles.content}
+              submenuItemClassName={customerCaseStyles.item}
+              submenuItemImgClassName={customerCaseStyles.img}
               onlyImg
               key={index}
               {...item}
-              col={1}
               itemImgKey="customerInfo.acfCustomerCase.customerCaseCustomer.acfCustomer.customerLogo.sourceUrl"
-              getLink={(item: MenuItem) => `/customers/${item.customerInfo?.slug}`}
+              getLink={(item: MenuItem) => `${URL_CONFIG.baseUrl}/customers/${item.customerInfo?.slug}`}
               onPanelClose={onPanelClose}
             />
           ))}
         </div>
-        <Button type="link" href = '/customers'>
+        <Button type="link" href = {`${URL_CONFIG.baseUrl}/customers`}>
             查看更多客户案例 →
         </Button>
       </div>

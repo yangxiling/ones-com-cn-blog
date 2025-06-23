@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
+import { URL_CONFIG } from '../../const/url-config';
 import get from 'lodash-es/get';
 import styles from './index.module.scss';
   
@@ -90,12 +91,14 @@ export const SubMenu: React.FC<SubMenuItemType> = ({
       <div className={styles.title}>{name}</div>
       <div className={menuContentClassName}>
         {menu?.map((item: MenuItem, index: number) => {
-          const link = getLink(item);
+          let link = getLink(item);
           const isExternalLink = link?.startsWith('http');
+          if(!isExternalLink){
+            link = `${URL_CONFIG.baseUrl}${link}`;
+          }
           const itemName = get(item, itemNameKey);
-          const itemIconUrl = get(item, itemImgKey);
+          const itemIconUrl = get(item, itemImgKey)?.replace('/blog/uploads/2022/12', '');
           const itemDesc = get(item, 'desc');
-
           return (
             <a
               className={submenuItemClassName}
@@ -113,7 +116,7 @@ export const SubMenu: React.FC<SubMenuItemType> = ({
                   height={60}
                   width={180}
                   alt={itemName}
-                  src={itemIconUrl}
+                  src={`${itemIconUrl}`}
                 />
               ) : !item.icon ? (
                 <div

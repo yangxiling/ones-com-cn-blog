@@ -3,6 +3,7 @@ import type {MenuItem} from './sub-menu';
 import {ArrowRight} from '@ones-design/icons'
 import styles from './index.module.scss';
 import supportsStyles from './supports.module.scss';
+import { URL_CONFIG } from '../../const/url-config';
 
 // 导入图片
 import supportImg from '../../images/support.webp';
@@ -44,10 +45,9 @@ export const SupportsPanel = ({
       <div className={supportsStyles.left}>
         <SubMenu
           key='0'
-
           menuContentClassName={supportsStyles.content}
           appendButton={
-            <a href={menu[0].link} type='text' style={{color: 'var(--blue-700)'}}>
+            <a href='https://ones.cn/blog' type='text' style={{color: 'var(--blue-700)'}}>
               更多文档和资源
               <ArrowRight style={{marginLeft: '10px'}} />
             </a>
@@ -62,7 +62,6 @@ export const SupportsPanel = ({
         <SubMenu
           key='2'
           menuContentClassName={supportsStyles.content}
-
           {...menu[2]}
         />
 
