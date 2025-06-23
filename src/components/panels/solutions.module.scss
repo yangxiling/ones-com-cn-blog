@@ -3,23 +3,47 @@
   justify-content: space-between;
   border-right: 1px solid #F0F0F2;
   padding: 40px 40px 40px 0;
+  gap: 45px;
 }
 
 .content {
-  width: 540px;
   display: flex;
-  // flex-direction: column;
+  flex-direction: column;
+}
+
+.item {
+  padding: 15px 0;
+
+  &:hover {
+    border-radius: 3px;
+    background: var(--Blue-5, #F2F7FF);
+  }
+}
+
+
+.sceneContent {
+  width: 480px;
+  display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 
 }
 
-.item {
-  margin-bottom: 10px;
-
-}
-
 .sceneItem {
   width: 240px;
-  height: 50px;
+  display: flex;
+  align-items: baseline;
+  justify-content: start;
+  gap: 8px;
+  padding: 10px 0;
+
+
+  &:hover {
+    border-radius: 3px;
+    background: var(--Blue-5, #F2F7FF);
+  }
+
+  :global(.ones-icon) {
+    font-size: 24px;
+  }
 }

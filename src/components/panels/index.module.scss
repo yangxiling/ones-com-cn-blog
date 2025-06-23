@@ -13,6 +13,7 @@
   padding: 40px 40px 40px 0;
 
 }
+
 .group {
   width: 900px;
   display: flex;
@@ -38,20 +39,28 @@
   margin-bottom: 20px;
 }
 
-.product, .app {
+.product,
+.app {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
 }
+
 .icon {
   font-size: 32px;
   margin-right: 12px;
 }
+
 .name {
   font-size: 16px;
   font-weight: 500;
   color: #222;
+
+  &:hover {
+    color: var(--bue-700, #0056FF);
+  }
 }
+
 .desc {
   font-size: 13px;
   color: #888;
@@ -62,18 +71,27 @@
   flex-direction: column;
   // align-items: center;
 }
+
 .qrcode {
   width: 120px;
   height: 120px;
   margin-bottom: 8px;
 }
+
 .qrtitle {
   font-size: 16px;
   font-weight: 500;
   color: #222;
 }
+
 .qrdesc {
   font-size: 13px;
   color: #888;
   text-align: center;
-} 
+}
+
+.link:hover {
+  text-decoration: none;
+  color: var(--bue-700, #0056FF);
+
+}

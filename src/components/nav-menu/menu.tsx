@@ -64,7 +64,7 @@ export const Menu: React.FC<{
         );
         return (!menuItem.link ? (
           <Popover
-            // trigger="hover"
+            trigger="hover"
             getPopupContainer={() => document.getElementById('nav-container')!}
             arrow={false}
             content={content}
@@ -79,7 +79,7 @@ export const Menu: React.FC<{
             </div>
           </Popover>
         ) : (
-            <a href={menuItem.link} rel="noopener noreferrer">
+            <a className={styles.link} href={menuItem.link} rel="noopener noreferrer">
             {menuItem.name}
           </a>
         ))

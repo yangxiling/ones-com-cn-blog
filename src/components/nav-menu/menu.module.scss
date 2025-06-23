@@ -37,3 +37,8 @@
   width: 100vw;
   // height: 50vh;
 }
+
+.link:hover {
+  text-decoration: none;
+  color: var(--bue-700, #0056FF);
+}

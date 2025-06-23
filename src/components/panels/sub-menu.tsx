@@ -1,7 +1,7 @@
 import React, {useMemo, useCallback, memo} from 'react';
 import {URL_CONFIG} from '../../const/url-config';
 import get from 'lodash-es/get';
-import {TestCaseLogo, PlanLogo, PerformanceLogo, AutomationLogo, DeskLogo, AccountLogo, TaskLogo, TimeLogo,CopilotLogo} from '@ones-design/icons';
+import {TestCaseLogo, PlanLogo, PerformanceLogo, AutomationLogo, DeskLogo, AccountLogo, TaskLogo, TimeLogo, CopilotLogo} from '@ones-design/icons';
 import styles from './index.module.scss';
 
 // 导入图标组件
@@ -97,7 +97,7 @@ const ImageContent = memo(({itemIconUrl, itemName, submenuItemImgClassName}: {
 ));
 
 // 渲染文本内容组件
-const TextContent = memo(({itemName, itemDesc, submenuItemClassName, submenuItemImgClassName, itemIconUrl, itemLogo}: {
+const IconWithText = memo(({itemName, itemDesc, submenuItemClassName, submenuItemImgClassName, itemIconUrl, itemLogo}: {
   itemName: string;
   itemDesc: string;
   submenuItemClassName?: string;
@@ -185,7 +185,7 @@ const MenuItemComponent = memo(({
     }
 
     if ((item.icon && item.icon.sourceUrl) || item.logo) {
-      return (<TextContent
+      return (<IconWithText
         itemName={itemData.itemName}
         itemDesc={itemData.itemDesc}
         submenuItemClassName={submenuItemClassName || ''}
@@ -202,7 +202,7 @@ const MenuItemComponent = memo(({
 
   return (
     <a
-      className={submenuItemClassName}
+      className={`${submenuItemClassName} ${styles.link}`}
       key={index}
       onClick={handleClick}
       href={linkData.fullLink}
