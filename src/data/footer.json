@@ -1,0 +1,76 @@
+[
+  {
+    "title": "产品 & 应用",
+    "links": [
+      { "name": "ONES Project", "url": "/products/project" },
+      { "name": "ONES Wiki", "url": "/products/wiki" },
+      { "name": "ONES Desk", "url": "/products/desk" },
+      { "name": "ONES TestCase", "url": "/products/testcase" },
+      { "name": "ONES Automation", "url": "/products/automation" },
+      { "name": "ONES Plan", "url": "/products/plan" },
+      { "name": "ONES Performance", "url": "/products/performance" },
+      { "name": "ONES Account", "url": "/products/account" },
+      { "name": "ONES Task", "url": "/products/task" },
+      { "name": "ONES Resource", "url": "/products/resource" }
+    ],
+    "viewMore": { "name": "前往应用中心", "url": "/products" }
+  },
+  {
+    "title": "解决方案",
+    "links": [
+      { "name": "进度管理", "url": "/solutions/scrum" },
+      { "name": "机器人研发管理", "url": "#" },
+      { "name": "汽车研发项目管理", "url": "/solutions/automobile" },
+      { "name": "企业服务研发管理", "url": "/solutions/enterprise-services" },
+      { "name": "装备制造项目管理", "url": "/solutions/equipment-manufacturing" },
+      { "name": "金融业研发管理", "url": "/solutions/financial" },
+      { "name": "智能制造研发管理", "url": "/solutions/intelligent-manufacturing" },
+      { "name": "IPD 研发管理", "url": "/solutions/ipd" },
+      { "name": "部署方式", "url": "/solutions/deployment" },
+      { "name": "开放能力", "url": "/solutions/development" }
+    ],
+    "viewMore": { "name": "查看全部解决方案", "url": "/solutions" }
+  },
+  {
+    "title": "客户案例",
+    "links": [
+      { "name": "人民日报新媒体中心", "url": "/customer/renminribao" },
+      { "name": "中国电信", "url": "/customer/zhongguodianxin" },
+      { "name": "长安国际信托", "url": "#" },
+      { "name": "荣数信息", "url": "/customer/rongshuxinxi" },
+      { "name": "优艾智合机器人", "url": "/customer/youaizhihe" },
+      { "name": "华发集团", "url": "#" },
+      { "name": "奥哲", "url": "/customer/aozhe" },
+      { "name": "中农网", "url": "/customer/zhongnongwang" },
+      { "name": "紫金保险", "url": "/customer/zijinbaoxian" },
+      { "name": "蓝城兄弟", "url": "/customer/lanchengxiongdi" }
+    ],
+    "viewMore": { "name": "查看全部客户案例", "url": "/customers" }
+  },
+  {
+    "title": "服务与支持",
+    "links": [
+      { "name": "产品定价", "url": "https://ones.cn/pricing", "isExternal": true },
+      { "name": "帮助手册", "url": "https://guide.ones.pro/wiki/#/team/LBrdb4wE/space/6XDAYB1a/page/7yeSmMVA", "isExternal": true },
+      { "name": "更新日志", "url": "https://ones.cn/changelog", "isExternal": true },
+      { "name": "服务团队", "url": "/services/team" },
+      { "name": "服务介绍", "url": "/service_success" },
+      { "name": "ONES Blog", "url": "/blog" },
+      { "name": "开发者中心", "url": "#" }
+    ]
+  },
+  {
+    "title": "关于 ONES",
+    "links": [
+      { "name": "关于我们", "url": "/aboutus" },
+      { "name": "联系我们", "url": "/contactus" },
+      { "name": "加入我们", "url": "https://app.mokahr.com/social-recruitment/oneshr/58057#/", "isExternal": true },
+      { "name": "合作伙伴招募", "url": "/partners" }
+    ]
+  },
+  {
+    "title": "下载移动端",
+    "isQRCode": true,
+    "qrCodeImage": "/images/qrcode.png"
+  }
+]
