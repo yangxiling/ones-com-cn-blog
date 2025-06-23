@@ -1,8 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
 import get from 'lodash-es/get';
-import styles from './sub-menu.module.scss';
-
+import styles from './index.module.scss';
+  
 export interface CustomerInfo {
   id: string;
   slug: string;
@@ -125,21 +125,23 @@ export const SubMenu: React.FC<SubMenuItemType> = ({
                 <div
                   className={ submenuItemClassName }
                 >
-                  <div className={classnames('oac-h-[28px] oac-w-[28px] oac-mr-2', submenuItemImgClassName)}>
-                    <img className='oac-align-top oac-object-cover !oac-w-full' src={itemIconUrl} alt={itemName} />
+                  <div className={ submenuItemImgClassName}>
+                    <img className='' src={itemIconUrl} alt={itemName} />
                   </div>
                   <div>
-                    <div className={classnames('oac-text-16 oac-font-normal ease-in-submenu-title', nameClassName)}>
+                    <div className=''>
                       {itemName}
                     </div>
-                    {itemDesc && <div className="oac-hidden xl:oac-block oac-mt-1 oac-text-gray-80">{itemDesc}</div>}
+                    {itemDesc && <div className="">{itemDesc}</div>}
                   </div>
                 </div>
               )}
             </a>
           );
         })}
-
+        <div className=''>
+          {appendButton}
+        </div>
       </div>
     </div>);
 };

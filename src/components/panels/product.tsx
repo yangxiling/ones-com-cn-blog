@@ -32,6 +32,7 @@ export const ProductMenuPanel = ({
         <div className={productStyles.base}>
           <SubMenu
             {...menu.base}
+            
             onPanelClose={onPanelClose}
           />
           {otherProduct?.isShow && (

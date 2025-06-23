@@ -1,18 +1,23 @@
-import { ExpertQRCode } from '../expert-qrcode';
-import { SubMenu } from './sub-menu';
-import type { MenuItem } from './sub-menu';
-import ExpertForProduct from '../../images/expert-for-product.png'; // Placeholder
+import {SubMenu} from './sub-menu';
+import type {MenuItem} from './sub-menu';
+import {ArrowRight} from '@ones-design/icons'
+import styles from './index.module.scss';
+import supportsStyles from './supports.module.scss';
+
+// 导入图片
+import supportImg from '../../images/support.webp';
+import support2Img from '../../images/suppot2.webp';
 
 interface BlogItem {
   title: string;
-  blogType: { name: string };
-  photo: { sourceUrl: string };
-  relatedBlog: { link: string };
+  blogType: {name: string};
+  photo: {sourceUrl: string};
+  relatedBlog: {link: string};
 }
 
 interface SupportsMenu {
   name: string;
-  menu: { name: string; menu: MenuItem[] }[];
+  menu: {name: string; menu: MenuItem[]}[];
   info: {
     title: string;
     recommend: {
@@ -27,42 +32,57 @@ interface SupportsMenu {
 
 export const SupportsPanel = ({
   menu,
-  onPanelClose,
+  info
 }: {
   menu: SupportsMenu;
-  onPanelClose: () => void;
+  info: SupportsMenu['info'];
 }) => {
-  const blogItems = menu.info.recommend.blog.acfBlogRecommend.blogRecommendBlogs;
+  // const blogItems = info.recommend.blog.acfBlogRecommend.blogRecommendBlogs;
 
   return (
-    <div className="">
-      {/* <div className="ease-in-panel-content oac-flex oac-flex-1 oac-justify-end oac-mr-6 oac-space-y-4 xl:oac-space-x-[60px] xl:oac-space-y-0">
-        {menu.menu.map((item, index: number) => (
-          <SubMenu
-            key={index}
-            {...item}
-            onPanelClose={onPanelClose}
-          />
-        ))}
-      </div>
-      <div className="oac-w-[300px] oac-pl-8 oac-ml-8">
-        <div className="ease-in-title">{menu.info.title}</div>
-        <div className="oac-space-y-4 oac-mt-4">
-          {blogItems.map((blog, index) => (
-            <a key={index} href={blog.relatedBlog.link} target="_blank" rel="noopener noreferrer" className="oac-flex oac-items-center oac-no-underline oac-text-black">
-              <img src={blog.photo.sourceUrl} alt={blog.title} className="oac-w-[120px] oac-h-[68px] oac-object-cover oac-mr-4 rounded" />
-              <div>
-                <p className="oac-text-sm oac-font-bold">{blog.title}</p>
-                <p className="oac-text-xs oac-text-gray-500">{blog.blogType.name}</p>
-              </div>
+    <div className={styles.panel}>
+      <div className={supportsStyles.left}>
+        <SubMenu
+          key='0'
+
+          menuContentClassName={supportsStyles.content}
+          appendButton={
+            <a href={menu[0].link} type='text' style={{color: 'var(--blue-700)'}}>
+              更多文档和资源
+              <ArrowRight style={{marginLeft: '10px'}} />
             </a>
-          ))}
+          }
+          {...menu[0]}
+        />
+        <SubMenu
+          key='1'
+          menuContentClassName={supportsStyles.content}
+          {...menu[1]}
+        />
+        <SubMenu
+          key='2'
+          menuContentClassName={supportsStyles.content}
+
+          {...menu[2]}
+        />
+
+      </div>
+      <div className={supportsStyles.right}>
+        <div className={styles.title}>{info.title}</div>
+        <div className={supportsStyles.content}>
+          <a href='https://ones.cn/blog' >
+            <img src={supportImg} alt={'support'} className={supportsStyles.blogImg} />
+          </a>
+          <a href='https://ones.cn/blog' >
+            <img src={support2Img} alt={'support'} className={supportsStyles.blogImg} />
+          </a>
+
+          <a href='https://ones.cn/blog' type='text' style={{color: 'var(--blue-700)'}}>
+            ONES Blog
+            <ArrowRight style={{marginLeft: '10px'}} />
+          </a>
         </div>
       </div>
-      <ExpertQRCode
-        title="获取专属产品演示"
-      /> */}
-  fuwuyuzhichi
     </div>
   )
 };
