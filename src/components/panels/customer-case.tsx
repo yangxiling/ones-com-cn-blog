@@ -16,10 +16,8 @@ interface CustomerMenu {
 
 export const CustomerCasePanel = ({
   menu,
-  onPanelClose,
 }: {
   menu: CustomerMenu[];
-  onPanelClose: () => void;
   }) => {
   return (
     <div className={styles.panel}>
@@ -36,7 +34,6 @@ export const CustomerCasePanel = ({
               {...item}
               itemImgKey="customerInfo.acfCustomerCase.customerCaseCustomer.acfCustomer.customerLogo.sourceUrl"
               getLink={(item: MenuItem) => `${URL_CONFIG.baseUrl}/customers/${item.customerInfo?.slug}`}
-              onPanelClose={onPanelClose}
             />
           ))}
         </div>

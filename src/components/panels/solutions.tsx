@@ -13,10 +13,10 @@ interface SolutionMenu {
 
 export const SolutionsPanel = ({
   menu,
-  onPanelClose,
+
 }: {
   menu: SolutionMenu[];
-  onPanelClose: () => void;
+
 }) => {
   return (
     <div className={styles.panel}>

@@ -2,10 +2,32 @@
   display: flex;
   border-right: 1px solid #F0F0F2;
   padding: 40px 40px 40px 0;
+  gap: 90px;
 }
 
 .base {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
   width: 300px;
+  height: 90px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 3px;
+  background: var(--Blue-5, #F2F7FF);
+}
+
+.bigIcon {
+  font-size: 49px;
+}
+
+.icon {
+  font-size: 32px;
 }
 
 .apps {
@@ -18,12 +40,11 @@
 }
 
 .app {
-  flex-direction: column;
-  align-items: flex-start;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
   width: 210px;
   height: 54px;
-  margin-bottom: 8px;
-
 }
 
 .appButton {

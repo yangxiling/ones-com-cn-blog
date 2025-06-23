@@ -3,6 +3,7 @@ import {SubMenu} from './sub-menu';
 import type {MenuItem} from './sub-menu';
 import {Button} from '@ones-design/core';
 import {ExpertQRCode} from './expert-qrcode';
+import {URL_CONFIG} from '../../const/url-config';
 import styles from './index.module.scss';
 import productStyles from './product.module.scss';
 interface MenuSection {
@@ -19,10 +20,8 @@ interface ProductMenu {
 
 export const ProductMenuPanel = ({
   menu,
-  onPanelClose,
 }: {
   menu: ProductMenu;
-  onPanelClose: () => void;
 }) => {
   const otherProduct = menu.otherProduct;
   return (
@@ -31,12 +30,15 @@ export const ProductMenuPanel = ({
       <div className={productStyles.left}>
         <div className={productStyles.base}>
           <SubMenu
+            menuContentClassName={productStyles.base}
+            submenuItemClassName={productStyles.item}
+            submenuItemImgClassName={productStyles.bigIcon}
             {...menu.base}
-            
-            onPanelClose={onPanelClose}
           />
           {otherProduct?.isShow && (
             <SubMenu
+              submenuItemClassName={productStyles.item}
+              submenuItemImgClassName={productStyles.bigIcon}
               {...otherProduct}
             />
           )}
@@ -46,12 +48,13 @@ export const ProductMenuPanel = ({
           <SubMenu
             menuContentClassName={productStyles.apps}
             submenuItemClassName={productStyles.app}
+            submenuItemImgClassName={productStyles.icon}
             {...menu.app}
           />
           <Button
             className={productStyles.appButton}
             type="link"
-            href="/app-center"
+            href={`${URL_CONFIG.baseUrl}/app-center`}
           >
             <AppMarket className={productStyles.appIcon} />
             前往应用中心探索更多应用

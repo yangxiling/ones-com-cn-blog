@@ -23,7 +23,6 @@ interface PanelProps {
   menu: any;
   info?: any;
   fieldGroupName: string;
-  onPanelClose: () => void;
 }
 
 export const MenuPanel: React.FC<{
@@ -60,11 +59,10 @@ export const Menu: React.FC<{
               menu: menuItem.menu,
               info: menuItem.info,
               fieldGroupName: menuItem.fieldGroupName,
-              onPanelClose: () => {},
             })}
           </MenuPanel>
         );
-        return (
+        return (!menuItem.link ? (
           <Popover
             // trigger="hover"
             getPopupContainer={() => document.getElementById('nav-container')!}
@@ -77,12 +75,14 @@ export const Menu: React.FC<{
               key={key}
             >
               {menuItem.name}
-              {!menuItem.link && (
-                <ChevronDown className={classnames(styles.menuItemIcon)} />
-              )}
+              <ChevronDown className={classnames(styles.menuItemIcon)} />
             </div>
           </Popover>
-        );
+        ) : (
+            <a href={menuItem.link} rel="noopener noreferrer">
+            {menuItem.name}
+          </a>
+        ))
       })}
     </div>
 

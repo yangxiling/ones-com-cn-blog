@@ -1,13 +1,10 @@
 import React from 'react';
 import {Button} from '@ones-design/core';
-import {Phone} from '@ones-design/icons';
 import styles from './nav.module.scss';
 import onesLogo from '../../images/ones-logo.svg';
+import Phone from '../../images/phone-icon.svg';
 import infoTechInnovationIcon from '../../images/info-tech-innovation-icon.svg';
-import classnames from 'classnames';
 import { Menu } from './menu';
-// import {MenuPanel} from '../menu-panel/menu-panel';
-// import NavMenuPanel from '../nav-menu-panel';
 
 const menuItems = [
   {
@@ -73,7 +70,6 @@ export const NavMenu = React.memo(() => {
             <img src={onesLogo} alt="ONES" />
           </a>
 
-          {/* <Menu mode="horizontal" className={styles.menu} items={menuItems} /> */}
           <Menu items={menuItems} />
         </div>
         <div className={styles.right}>
@@ -82,7 +78,7 @@ export const NavMenu = React.memo(() => {
             type="default"
             className={styles.phone}
           >
-            <Phone />
+            <img style={{marginRight: '5px'}} src={Phone} alt="Phone" />
             400-666-1399
 
           </Button>

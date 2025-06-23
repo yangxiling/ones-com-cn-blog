@@ -10,6 +10,7 @@
             "name": "ONES TestCase",
             "link": "/products/testcase",
             "desc": "测试管理",
+            "logo": "TestCaseLogo",
             "icon": {
               "sourceUrl": "/blog/uploads/2022/12/TestCaseLogo-1.png"
             }
@@ -18,6 +19,7 @@
             "name": "ONES Plan",
             "link": "/products/plan",
             "desc": "项目集管理",
+            "logo": "PlanLogo",
             "icon": {
               "sourceUrl": "/blog/uploads/2022/12/PlanLogo-1.png"
             }
@@ -26,6 +28,7 @@
             "name": "ONES Performance",
             "link": "/products/performance",
             "desc": "效能管理",
+            "logo": "PerformanceLogo",
             "icon": {
               "sourceUrl": "/blog/uploads/2022/12/PerformanceLogo-1.png"
             }
@@ -34,6 +37,7 @@
             "name": "ONES Automation",
             "link": "/products/automation",
             "desc": "流程自动化",
+            "logo": "AutomationLogo",
             "icon": {
               "sourceUrl": "/blog/uploads/2022/12/AutomationLogo-1.png"
             }
@@ -42,6 +46,7 @@
             "name": "ONES Desk",
             "link": "/products/desk",
             "desc": "工单管理",
+            "logo": "DeskLogo",
             "icon": {
               "sourceUrl": "/blog/uploads/2022/12/DeskLogo-1.png"
             }
@@ -50,6 +55,7 @@
             "name": "ONES Account",
             "link": "/products/account",
             "desc": "企业级帐号目录",
+            "logo": "AccountLogo",
             "icon": {
               "sourceUrl": "/blog/uploads/2022/12/AccountLogo-1.png"
             }
@@ -58,6 +64,7 @@
             "name": "ONES Task",
             "link": "/products/task",
             "desc": "任务协作",
+            "logo": "TaskLogo",
             "icon": {
               "sourceUrl": "/blog/uploads/2022/12/TaskLogo.png"
             }
@@ -66,6 +73,7 @@
             "name": "ONES Resource",
             "link": "/products/resource",
             "desc": "资源管理",
+            "logo": "TimeLogo",
             "icon": {
               "sourceUrl": "/blog/uploads/2022/12/TimeLogo-1.png"
             }
@@ -79,6 +87,7 @@
             "name": "ONES Project",
             "link": "/products/project",
             "desc": "项目管理",
+            "logo": "ProjectLogo",
             "icon": {
               "sourceUrl": "/blog/uploads/2022/12/ProjectLogo-1.png"
             }
@@ -87,6 +96,7 @@
             "name": "ONES Wiki",
             "link": "/products/wiki",
             "desc": "知识库管理",
+            "logo":"WikiLogo",
             "icon": {
               "sourceUrl": "/blog/uploads/2022/12/WikiLogo-2.png"
             }
@@ -101,6 +111,7 @@
             "name": "ONES Copilot",
             "link": "/products/ai",
             "desc": "AI 助手",
+            "logo": "CopilotLogo",
             "icon": {
               "sourceUrl": "/blog/uploads/2022/12/ONES_Copilot.png"
             }
@@ -738,7 +749,7 @@
   },
   "menuPrice": {
     "fieldGroupName": "menu_price",
-    "link": "/pricing",
+    "link": "https://ones.cn/pricing",
     "name": "产品定价"
   }
 }
