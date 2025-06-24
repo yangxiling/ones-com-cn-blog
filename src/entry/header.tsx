@@ -7,7 +7,6 @@ const mountNav = (elementId: string) => {
   console.log('0headercontainer', elementId);
 
   const container = document.getElementById(elementId);
-  console.log('1-headercontainer', container);
 
   if (!container) return;
 console.log('2-headercontainer',container);

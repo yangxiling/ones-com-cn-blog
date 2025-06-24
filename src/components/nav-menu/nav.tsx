@@ -53,12 +53,10 @@ const menuItems = [
 export const NavMenu = React.memo(() => {
 
   const handleBtnClick = () => {
-    console.log('btn click');
     window.location.href = 'https://ones.cn/service_success?utm_term=%E9%A2%84%E7%BA%A6%E6%BC%94%E7%A4%BA&_channel_track_key=NdBOAxB4&utm_source=ones-issue';
   };
 
   const handleTrialClick = () => {
-    console.log('trial click');
     window.location.href = 'https://ones.cn/sign_up?utm_source=ones-issue&utm_term=home&utm_campaign=banner&_channel_track_key=KJ4xUv9v';
   };
 

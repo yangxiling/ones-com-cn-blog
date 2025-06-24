@@ -1,5 +1,33 @@
-[
-[
+import TwitterIcon from "../../assets/svgs/twitter_icon.svg";
+import LinkedInIcon from "../../assets/svgs/linkedin_icon.svg";
+import FacebookIcon from "../../assets/svgs/facebook_icon.svg";
+import YouTuBeIcon from "../../assets/svgs/youtube_icon.svg";
+
+export const socialLinks = [
+  {
+    type: "twitter",
+    link: "https://twitter.com/ONES_2022",
+    slot: TwitterIcon,
+  },
+  {
+    type: "linkedin",
+    link: "https://www.linkedin.com/company/ones-2022",
+    slot: LinkedInIcon,
+  },
+  {
+    type: "facebook",
+    link: "https://www.facebook.com/ONES_2022",
+    slot: FacebookIcon,
+  },
+  {
+    type: "youtube",
+    link: "https://www.youtube.com/channel/UC1234567890",
+    slot: YouTuBeIcon,
+  },
+];
+
+
+export const footerData =[
   {
     "title": "Product",
     "child": [
@@ -45,19 +73,19 @@
       }
     ]
   },
-    {
-      "title": "Solutions",
-      "child": [
-        {
-          "title": "Software development",
-          "link": "/solutions/software-development"
-        },
-        {
-          "title": "Work management",
-          "link": "/solutions/work-management"
-        }
-      ]
-    }
+  {
+    "title": "Solutions",
+    "child": [
+      {
+        "title": "Software development",
+        "link": "/solutions/software-development"
+      },
+      {
+        "title": "Work management",
+        "link": "/solutions/work-management"
+      }
+    ]
+  }
   ,
   {
     "title": "Resources",
@@ -135,5 +163,4 @@
       }
     ]
   }
-]
 ]
