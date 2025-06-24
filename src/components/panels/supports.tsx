@@ -19,7 +19,7 @@ interface BlogItem {
 interface SupportsMenu {
   name: string;
   menu: {name: string; menu: MenuItem[]}[];
-  info: {
+  info?: {
     title: string;
     recommend: {
       blog: {
@@ -36,7 +36,7 @@ export const SupportsPanel = ({
   info
 }: {
   menu: SupportsMenu;
-  info: SupportsMenu['info'];
+  info?: SupportsMenu['info'];
 }) => {
   // const blogItems = info.recommend.blog.acfBlogRecommend.blogRecommendBlogs;
 
