@@ -79,7 +79,7 @@ export const Menu: React.FC<{
             </div>
           </Popover>
         ) : (
-            <a className={styles.link} href={menuItem.link} rel="noopener noreferrer">
+            <a className={styles.link} href={menuItem.link} >
             {menuItem.name}
           </a>
         ))

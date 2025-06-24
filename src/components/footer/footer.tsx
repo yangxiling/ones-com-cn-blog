@@ -1,4 +1,4 @@
-import {socialLinks, footerData} from './const-ja';
+import {socialLinks, footerData} from './const-en';
 import styles from './footer.module.scss';
 import onesLogo from '../../assets/logo_dark.svg';
 import {URL_CONFIG} from '../../const/url-config';
@@ -22,9 +22,9 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.mainFooter}>
-          <div className={styles.column}>
+          <a href={URL_CONFIG.baseUrl}>
             <img src={onesLogo} alt="ONES Logo" style={{width: '134px', height: '24px'}} />
-          </div>
+          </a>
 
           <div className={styles.productColumns}>
           {columns.map((column, index) => (
@@ -33,7 +33,7 @@ export const Footer = () => {
               <ul>
                 {column.child?.map((item, childIndex) => (
                   <li key={childIndex}>
-                    <a href={item.isExternal ? item.link : `${URL_CONFIG.baseUrl}${item.link}`} rel="noopener noreferrer">
+                    <a href={item.isExternal ? item.link : `${URL_CONFIG.baseUrl}${item.link}`}>
                       {item.title}
                     </a>
                   </li>
@@ -49,7 +49,7 @@ export const Footer = () => {
         <div className={styles.copyrightText}>
           <div className={styles.socialLinks}>
             {socialLinks.map((item, index) => (
-              <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
+              <a key={index} href={item.link}>
                 <img src={item.slot} alt={item.type} />
               </a>
             ))}

@@ -1,7 +1,7 @@
-import TwitterIcon from "../../assets/svgs/twitter_icon.svg";
-import LinkedInIcon from "../../assets/svgs/linkedin_icon.svg";
-import FacebookIcon from "../../assets/svgs/facebook_icon.svg";
-import YouTuBeIcon from "../../assets/svgs/youtube_icon.svg";
+import TwitterIcon from "../../assets/twitter_icon.svg";
+import LinkedInIcon from "../../assets/linkedin_icon.svg";
+import FacebookIcon from "../../assets/facebook_icon.svg";
+import YouTuBeIcon from "../../assets/youtube_icon.svg";
 
 export const socialLinks = [
   {
