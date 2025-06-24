@@ -1,37 +1,66 @@
-[
+import TwitterIcon from "../../assets/svgs/twitter_icon.svg";
+import LinkedInIcon from "../../assets/svgs/linkedin_icon.svg";
+import FacebookIcon from "../../assets/svgs/facebook_icon.svg";
+import YouTuBeIcon from "../../assets/svgs/youtube_icon.svg";
+
+export const socialLinks = [
   {
-    "title": "製品",
+    type: "twitter",
+    link: "https://twitter.com/ONES_2022",
+    slot: TwitterIcon,
+  },
+  {
+    type: "linkedin",
+    link: "https://www.linkedin.com/company/ones-2022",
+    slot: LinkedInIcon,
+  },
+  {
+    type: "facebook",
+    link: "https://www.facebook.com/ONES_2022",
+    slot: FacebookIcon,
+  },
+  {
+    type: "youtube",
+    link: "https://www.youtube.com/channel/UC1234567890",
+    slot: YouTuBeIcon,
+  },
+];
+
+
+export const footerData =[
+  {
+    "title": "Product",
     "child": [
       {
-        "title": "プロジェクト管理",
+        "title": "Project management",
         "link": "/products/project"
       },
       {
-        "title": "ナレッジコラボレーション",
+        "title": "Knowledge collaboration",
         "link": "/products/wiki"
       },
       {
-        "title": "ガントチャート",
+        "title": "Gantt",
         "link": "/features/gantt"
       },
       {
-        "title": "レポート",
+        "title": "Reporting",
         "link": "/features/reporting"
       },
       {
-        "title": "リソースの最適化",
+        "title": "Resource planning",
         "link": "/features/worklogs"
       },
       {
-        "title": "自動化",
+        "title": "Automation",
         "link": "/features/automations"
       },
       {
-        "title": "コードインテグレーション",
+        "title": "Code Integration",
         "link": "/products/code-integration"
       },
       {
-        "title": "パイプラインインテグレーション",
+        "title": "Pipeline Integration",
         "link": "/products/pipeline-integration"
       },
       {
@@ -45,59 +74,52 @@
     ]
   },
   {
-    "title": "ソリューション",
+    "title": "Solutions",
     "child": [
       {
-        "title": "ソフトウェア開発",
+        "title": "Software development",
         "link": "/solutions/software-development"
       },
       {
-        "title": "業務管理",
+        "title": "Work management",
         "link": "/solutions/work-management"
-      },
-      {
-        "title": "アジャイル開発",
-        "link": "/solutions/agile-development"
-      },
-      {
-        "title": "ウォーターフォール開発",
-        "link": "/solutions/waterfall-development"
       }
     ]
-  },
+  }
+  ,
   {
-    "title": "リソース",
+    "title": "Resources",
     "child": [
       {
-        "title": "料金プラン",
+        "title": "Pricing",
         "link": "/pricing"
       },
       {
         "title": "ONES Academy",
-        "link": "https://academy.ones.com/home-ja",
+        "link": "https://academy.ones.com/home",
         "target": "_blank"
       },
       {
-        "title": "ブログ",
-        "link": "https://ones.com/ja/blog",
+        "title": "Blog",
+        "link": "https://ones.com/blog",
         "target": "_blank"
       },
       {
-        "title": "お役立ち資料",
-        "link": "https://ja.docs.ones.com/",
+        "title": "Docs",
+        "link": "https://docs.ones.com",
         "target": "_blank"
       },
       {
-        "title": "Jira、Confluence 移行",
+        "title": "Jira & Confluence migration",
         "link": "/migration",
         "target": "_blank"
       },
       {
-        "title": "営業に問い合わせる",
+        "title": "Contact sales",
         "link": "/contact_us"
       },
       {
-        "title": "デモを予約する",
+        "title": "Book a demo",
         "link": "/request_demo"
       },
       {
@@ -115,27 +137,27 @@
     ]
   },
   {
-    "title": "企業情報",
+    "title": "Company",
     "child": [
       {
-        "title": "ONES.com について",
+        "title": "About us",
         "link": "/about"
       },
       {
-        "title": "パートナープログラム",
+        "title": "Partner programs",
         "link": "/partners"
       },
       {
-        "title": "セキュリティ",
+        "title": "Trust center",
         "link": "/trust"
       },
       {
-        "title": "利用規約",
+        "title": "Terms of Service",
         "link": "/trust/terms",
         "target": "_blank"
       },
       {
-        "title": "プライバシーポリシー",
+        "title": "Privacy Policy",
         "link": "/trust/privacy",
         "target": "_blank"
       }
