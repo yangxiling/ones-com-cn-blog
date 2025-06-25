@@ -17,13 +17,13 @@ export const NavMenu = React.memo(() => {
         </div>
         <div className={styles.right}>
           <a className={styles.text} href={`${URL_CONFIG.baseUrl}/contact_us`}>
-            <span>Contact sales</span>
+            <span>お問い合わせ</span>
           </a>
           <a className={styles.text} href={`${URL_CONFIG.baseUrl}/identity/login`}>
-            <span>Log in</span>
+            <span>ログイン</span>
           </a>
           <a href={`${URL_CONFIG.baseUrl}/sign_up`}>
-            <button className={styles.trial}>Try for free</button>
+            <button className={styles.trial}>無料トライアル</button>
           </a>
         </div>
       </div>
