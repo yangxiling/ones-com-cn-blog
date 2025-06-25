@@ -38,25 +38,48 @@
 .right {
   display: flex;
   align-items: center;
+  gap: 20px;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      outline: none;
+    }
+  }
 }
 
-.phone {
-  background-color: #e5efff;
-  border: none;
-  border-radius: 16px;
+.text {
+  color: var(--Gray-Gray3, #696A6D);
+  /* 导航内部文字、正文 */
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
 }
 
-.phone:hover {
-  color: var(--blue-700);
+.text:hover {
+  color: #0064ff;
 }
 
-.login {
-  font-size: 16px;
-}
 
 .trial {
-  width: 114px;
   height: 40px;
-  padding: 8px 24px;
-  font-size: 16px;
+  padding: 8px 15px;
+  color: var(--White-100, #FFF);
+  text-align: center;
+  border-radius: 3px;
+  background: var(---1, #0064FF);
+
+  &:hover {
+    background-color: #226aff;
+  }
 }
