@@ -3,7 +3,7 @@ import {URL_CONFIG} from "../const/url-config";
 const menuData = {
   "menuProduct": {
     "fieldGroupName": "menu_product",
-    "name": "Product",
+    "name": "製品",
     "menus": [
       {
         "name": "機能",
