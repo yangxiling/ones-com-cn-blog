@@ -9,7 +9,7 @@ export const NavMenu = React.memo(() => {
     <nav id="nav-container" className={styles.container}>
       <div className={styles.navbar}>
         <div className={styles.left}>
-          <a className={styles.logo} href="https://ones.cn">
+          <a className={styles.logo} href={`${URL_CONFIG.baseUrl}`}>
             <img src={onesLogo} alt="ONES" />
           </a>
 
@@ -17,13 +17,13 @@ export const NavMenu = React.memo(() => {
         </div>
         <div className={styles.right}>
           <a className={styles.text} href={`${URL_CONFIG.baseUrl}/contact_us`}>
-            <span>お問い合わせ</span>
+            <span>Contact sales</span>
           </a>
           <a className={styles.text} href={`${URL_CONFIG.baseUrl}/identity/login`}>
-            <span>ログイン</span>
+            <span>Log in</span>
           </a>
           <a href={`${URL_CONFIG.baseUrl}/sign_up`}>
-            <button className={styles.trial}>無料トライアル</button>
+            <button className={styles.trial}>Try for free</button>
           </a>
         </div>
       </div>

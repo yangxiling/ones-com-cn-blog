@@ -1,69 +1,42 @@
-import {AppMarket} from '@ones-design/icons';
 import {SubMenu} from './sub-menu';
 import type {MenuItem} from './sub-menu';
-import {Button} from '@ones-design/core';
-import {ExpertQRCode} from './expert-qrcode';
-import {URL_CONFIG} from '../../const/url-config';
 import styles from './index.module.scss';
 import productStyles from './product.module.scss';
+
 interface MenuSection {
   name: string;
-  menu: MenuItem[];
+  menus: MenuItem[];
 }
-
-interface ProductMenu {
-  base: MenuSection;
-  app: MenuSection;
-  otherProduct?: MenuSection & {isShow?: boolean};
-}
-
 
 export const ProductMenuPanel = ({
-  menu,
+  menus,
 }: {
-  menu: ProductMenu;
-}) => {
-  const otherProduct = menu.otherProduct;
+  menus: MenuSection[];
+  }) => {
+  console.log(productStyles.productFeaturesItem,'productFeaturesItem');
   return (
-
     <div className={styles.panel}>
-      <div className={productStyles.left}>
-        <div className={productStyles.base}>
-          <SubMenu
-            menuContentClassName={productStyles.base}
-            submenuItemClassName={productStyles.item}
-            submenuItemImgClassName={productStyles.bigIcon}
-            {...menu.base}
-          />
-          {otherProduct?.isShow && (
-            <SubMenu
-              submenuItemClassName={productStyles.item}
-              submenuItemImgClassName={productStyles.bigIcon}
-              {...otherProduct}
-            />
-          )}
-        </div>
+      <div className={productStyles.product}>
+        <SubMenu
+          key='0'
+          menuContentClassName={productStyles.productFeatures}
+          submenuItemClassName={productStyles.productFeaturesItem}
+          {...menus[0]}
+        />
 
-        <div className={productStyles.apps}>
-          <SubMenu
-            menuContentClassName={productStyles.apps}
-            submenuItemClassName={productStyles.app}
-            submenuItemImgClassName={productStyles.icon}
-            {...menu.app}
-          />
-          <Button
-            className={productStyles.appButton}
-            type="link"
-            href={`${URL_CONFIG.baseUrl}/app-center`}
-          >
-            <AppMarket className={productStyles.appIcon} />
-            前往应用中心探索更多应用
-          </Button>
-        </div>
+        <SubMenu
+          key='1'
+          menuContentClassName={productStyles.productMiddle}
+          submenuItemClassName={productStyles.item}
+          {...menus[1]}
+        />
+        <SubMenu
+          key='2'
+          menuContentClassName={productStyles.productAddons}
+          submenuItemClassName={productStyles.item}
+          {...menus[2]}
+        />
       </div>
-      <ExpertQRCode
-        title="了解更多产品细节"
-      />
     </div>
 
   );

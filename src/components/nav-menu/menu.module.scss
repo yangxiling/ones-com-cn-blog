@@ -6,16 +6,38 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding: 0 10px;
 }
 
 .menuItem {
   height: 52px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  color: var(--Gray-Gray1-, #16171A);
   cursor: pointer;
+
   &:hover {
-    color: var(--blue-700);
+    color: #0064FF;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--Gray-Gray1-, #16171A);
+
+  &:hover {
+    text-decoration: none;
+    color: #0064FF;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
   }
 }
 

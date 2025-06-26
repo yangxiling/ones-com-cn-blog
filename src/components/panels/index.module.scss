@@ -1,97 +1,108 @@
 .panel {
+  max-width: 1200px;
+  min-width: 1024px;
+  padding: 20px 30px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   background: #fff;
-  min-width: 900px;
   margin: auto;
+
+  a {
+      text-decoration: none;
+      outline: none;
+      border: none;
+      cursor: pointer;
+  
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+        outline: none;
+      }
+    }
 }
 
-.left {
+.content {
   display: flex;
-  flex-direction: column;
-  border-right: 1px solid #F0F0F2;
-  padding: 40px 40px 40px 0;
-
+  justify-content: start;
 }
 
-.group {
-  width: 900px;
+.item {
+  display: flex;
+  justify-content: baseline;
+  padding: 15px;
+
+  &:hover {
+    border-radius: 3px;
+    background-color: var(--Blue-5, #F2F7FF);
+  }
+}
+
+
+.solutions .item{
+  width: 300px;
+}
+
+.resources {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+
+  .item {
+    width: 290px;
+  }
 }
 
-.right {
+.resourcesLearn {
+  width: 870px;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.resourcesConnect {
+  justify-content: space-between;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 40px;
-  padding-top: 80px;
 }
 
 
 .title {
-  color: var(--Gray-80, #7E7F81);
-  font-family: "ONES Sans";
-  font-size: 16px;
-  line-height: 26px;
-  margin-bottom: 20px;
+  color: var(--Gray-Gray4,#A8A8AA);
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  min-height: 24px;
+  padding-left: 15px;
+  margin-bottom: 15px;
 }
 
-.product,
-.app {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.icon {
-  font-size: 32px;
-  margin-right: 12px;
+.logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 
 .name {
+  color: var(--Gray-Gray1-, #16171A);
+  font-family: "Plus Jakarta Sans";
   font-size: 16px;
-  font-weight: 500;
-  color: #222;
-
-  &:hover {
-    color: var(--bue-700, #0056FF);
-  }
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .desc {
-  font-size: 13px;
-  color: #888;
+  color: var(--Gray-Gray3, #696A6D);
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  
+  .productFeaturesItem & {
+    width: 200px;
+  }
 }
 
-.qrcodeBox {
-  display: flex;
-  flex-direction: column;
-  // align-items: center;
-}
-
-.qrcode {
-  width: 120px;
-  height: 120px;
-  margin-bottom: 8px;
-}
-
-.qrtitle {
-  font-size: 16px;
-  font-weight: 500;
-  color: #222;
-}
-
-.qrdesc {
-  font-size: 13px;
-  color: #888;
-  text-align: center;
-}
-
-.link:hover {
-  text-decoration: none;
-  color: var(--bue-700, #0056FF);
-
+.productFeaturesItem .desc{
+  width: 200px;
 }
