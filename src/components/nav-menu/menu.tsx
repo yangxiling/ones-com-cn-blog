@@ -2,9 +2,9 @@ import React from 'react';
 import classnames from 'classnames';
 import {ChevronDown} from '@ones-design/icons';
 import {Popover} from '@ones-design/core';
-import menuData from '../../data/nav-const';
+import menuData from '../../data/nav-const-ja';
 import styles from './menu.module.scss';
-import productStyles from '../panels/product.module.scss';
+
 import {
   ProductMenuPanel,
   SolutionsPanel,
@@ -29,14 +29,13 @@ export const Menu: React.FC<{
 
         const renderContent = () => {
           if (!menuItem.menus) return null;
-          
           switch (key) {
             case 'menuProduct':
               return <ProductMenuPanel menus={menuItem.menus as any} />;
             case 'menuSolution':
               return <SolutionsPanel menus={menuItem.menus as any} />;
             case 'menuResource':
-              return <ResourcesPanel menus={menuItem.menus as any}  />;
+              return <ResourcesPanel menus={menuItem.menus as any} />;
             default:
               return null;
           }
@@ -47,10 +46,9 @@ export const Menu: React.FC<{
             {renderContent()}
           </div>
         );
-        
         return (!menuItem.link ? (
           <Popover
-            // trigger="hover"
+            trigger="hover"
             getPopupContainer={() => document.getElementById('nav-container')!}
             arrow={false}
             content={content}

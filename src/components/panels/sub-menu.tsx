@@ -10,6 +10,8 @@ import ResourceLogo from '../../assets/resource_planning_svg.svg';
 import AutomationLogo from '../../assets/automation_svg.svg';
 import CodeIntegrationLogo from '../../assets/code_integration_svg.svg';
 import PipelineIntegrationLogo from '../../assets/pipeline_integration.svg';
+import AgileLogo from '../../assets/agile_management_svg.svg';
+import WaterfallLogo from '../../assets/waterfall_development_svg.svg';
 
 import styles from './index.module.scss';
 
@@ -31,6 +33,8 @@ const logoMap: Record<string, React.ComponentType<{className?: string}>> = {
   'AutomationLogo': ({className}) => <img src={AutomationLogo} className={className} alt="AutomationLogo" />,
   'CodeIntegrationLogo': ({className}) => <img src={CodeIntegrationLogo} className={className} alt="CodeIntegrationLogo" />,
   'PipelineIntegrationLogo': ({className}) => <img src={PipelineIntegrationLogo} className={className} alt="PipelineIntegrationLogo" />,
+  'AgileLogo': ({className}) => <img src={AgileLogo} className={className} alt="AgileLogo" />,
+  'WaterfallLogo': ({className}) => <img src={WaterfallLogo} className={className} alt="WaterfallLogo" />,
 };
 
 
@@ -95,7 +99,7 @@ const MenuItemComponent = memo(({
       key={index}
       href={linkData.fullLink}
     >
-      {LogoComponent && <LogoComponent className={styles.logo}/>}
+      {LogoComponent && <LogoComponent className={styles.logo} />}
       <div>
         <div className={styles.name}>{itemData.itemName}</div>
         {itemData.itemDesc && <div className={styles.desc}>{itemData.itemDesc}</div>}
@@ -116,7 +120,7 @@ export const SubMenu: React.FC<SubMenuItemType> = memo(({
 
     return menu.map((item: MenuItem, index: number) => {
 
-     return (
+      return (
         <MenuItemComponent
           key={item.id || index}
           item={item}
@@ -125,7 +129,7 @@ export const SubMenu: React.FC<SubMenuItemType> = memo(({
         />
       )
     }
-);
+    );
   }, [menu, submenuItemClassName]);
 
   return (
