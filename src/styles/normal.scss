@@ -36,8 +36,21 @@ h2 {
   font-weight: inherit;
 }
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+  }
 }
 svg {
   shape-rendering: auto;
@@ -52,4 +65,4 @@ pre {
   overflow: scroll;
   padding: 0.5rem 0.75rem;
 }
-img{border-style:none;max-width: 100%;}
+img{border-style:none;}
