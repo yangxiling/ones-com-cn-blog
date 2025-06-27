@@ -19,11 +19,11 @@ export const NavMenu = React.memo(() => {
           <a className={styles.text} href={`${URL_CONFIG.baseUrl}/contact_us`}>
             <span>お問い合わせ</span>
           </a>
-          <a className={styles.text} href={`${URL_CONFIG.baseUrl}/identity/login`}>
+          <a className={styles.text} href={'https://ones.com/identity/login?ones_from=https://ones.com/project/?lang=ja&segment=bk9vBIvqW1RVne41A24YWqNUGxQeDPHH&lang=ja'}>
             <span>ログイン</span>
           </a>
-          <a href={`${URL_CONFIG.baseUrl}/sign_up`}>
-            <button className={styles.trial}>無料トライアル</button>
+          <a className={styles.trial} href={`${URL_CONFIG.baseUrl}/sign_up`}>
+            <span >無料トライアル</span>
           </a>
         </div>
       </div>

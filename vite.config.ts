@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: 'https://ones.cn/', // Public base path for production
   build: {
-    outDir: 'dist',
+    outDir: 'react-build',
     sourcemap: true,
     rollupOptions: {
       input: {

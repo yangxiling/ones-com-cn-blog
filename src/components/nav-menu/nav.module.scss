@@ -56,7 +56,6 @@
 
 
 .trial {
-  height: 40px;
   padding: 8px 15px;
   color: var(--White-100, #FFF);
   text-align: center;
@@ -64,6 +63,7 @@
   background: var(---1, #0064FF);
 
   &:hover {
+    color: #fff;
     background-color: #226aff;
   }
 }
