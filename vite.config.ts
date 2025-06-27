@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'react-build',
     sourcemap: true,
+    assetsInlineLimit: 10240, // 10KB，小于此大小的图片会被内联为 base64
     rollupOptions: {
       input: {
         header: './src/entry/header.tsx',
@@ -28,5 +29,6 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ['@ones-design/core', '@ones-design/icons']
-  }
+  },
+  assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg']
 });

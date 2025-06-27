@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './nav.module.scss';
-import onesLogo from '../../images/ones-logo.svg';
+import onesLogo from '../../assets/onescom.svg';
 import {Menu} from './menu';
 import {URL_CONFIG} from '../../const/url-config';
 
