@@ -97,16 +97,19 @@ export const footerData =[
       {
         "title": "ONES Academy",
         "link": "https://academy.ones.com/home",
+        "isExternal": true,
         "target": "_blank"
       },
       {
         "title": "Blog",
         "link": "https://ones.com/blog",
+        "isExternal": true,
         "target": "_blank"
       },
       {
         "title": "Docs",
         "link": "https://docs.ones.com",
+        "isExternal": true,
         "target": "_blank"
       },
       {
