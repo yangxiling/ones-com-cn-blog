@@ -23,7 +23,7 @@ export const NavMenu = React.memo(() => {
             <span>Log in</span>
           </a>
           <a className={styles.trial} href={`${URL_CONFIG.baseUrl}/sign_up`}>
-            <span >Try for free</span>
+            <span style={{color: '#fff'}}>Try for free</span>
           </a>
         </div>
       </div>
