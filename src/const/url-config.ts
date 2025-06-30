@@ -1,3 +1,3 @@
 export const URL_CONFIG = {
-  baseUrl: 'https://ones.com/ja',
+  baseUrl: 'https://ones.com',
 }

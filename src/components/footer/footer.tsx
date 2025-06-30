@@ -1,4 +1,4 @@
-import {socialLinks, footerData} from './const-ja';
+import {socialLinks, footerData} from './const-en';
 import styles from './footer.module.scss';
 import onesLogo from '../../assets/logo_dark.svg';
 import {URL_CONFIG} from '../../const/url-config';

@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import {ChevronDown} from '@ones-design/icons';
 import {Popover} from '@ones-design/core';
-import menuData from '../../data/nav-const-ja';
+import menuData from '../../data/nav-const';
 import styles from './menu.module.scss';
 
 import {
