@@ -64,7 +64,7 @@ export const Menu: React.FC<{
         );
         return (!menuItem.link ? (
           <Popover
-            trigger="hover"
+            // trigger="hover"
             getPopupContainer={() => document.getElementById('nav-container')!}
             arrow={false}
             content={content}

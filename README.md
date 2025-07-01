@@ -96,7 +96,7 @@ src/
 │   ├── header.tsx       # Header 入口文件
 │   └── footer.tsx       # Footer 入口文件
 ├── styles/              # 全局样式
-└── images/              # 图片资源
+└── assets/images/              # 图片资源
 ```
 
 ## 自定义配置

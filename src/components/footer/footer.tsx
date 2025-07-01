@@ -1,12 +1,12 @@
 import React from 'react';
 import footerData from '../../data/footer.json';
 import styles from './footer.module.scss';
-import OnesLogo from '../../images/ones-logo.svg';
+import OnesLogo from '../../assets/images/ones-logo.svg';
 import {Phone} from '@ones-design/icons';
 import {URL_CONFIG } from '../../const/url-config';
-import WechatIcon from '../../images/wechat.svg';
-import ZhihuIcon from '../../images/zhihu.svg';
-import BilibiliIcon from '../../images/bilibili.svg';
+import WechatIcon from '../../assets/images/wechat.svg';
+import ZhihuIcon from '../../assets/images/zhihu.svg';
+import BilibiliIcon from '../../assets/images/bilibili.svg';
 
 interface Link {
   name: string;

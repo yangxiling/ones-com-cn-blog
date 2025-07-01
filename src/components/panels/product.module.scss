@@ -42,13 +42,13 @@
 .app {
   display: flex;
   align-items: baseline;
-  gap: 8px;
   width: 210px;
 }
 
 .appButton {
   width: 100%;
   height: 50px;
+  margin-top: 20px;
   background-color: rgba(#F0F0F2,0.4);
 }
 

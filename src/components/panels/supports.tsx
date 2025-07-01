@@ -6,8 +6,8 @@ import supportsStyles from './supports.module.scss';
 import { URL_CONFIG } from '../../const/url-config';
 
 // 导入图片
-import supportImg from '../../images/support.webp';
-import support2Img from '../../images/suppot2.webp';
+import supportImg from '../../assets/images/support.webp';
+import support2Img from '../../assets/images/suppot2.webp';
 
 interface BlogItem {
   title: string;

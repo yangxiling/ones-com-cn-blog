@@ -27,8 +27,6 @@ export const CustomerCasePanel = ({
             <SubMenu
               className={styles.subMenu}
               menuContentClassName={customerCaseStyles.content}
-              submenuItemClassName={customerCaseStyles.item}
-              submenuItemImgClassName={customerCaseStyles.img}
               onlyImg
               key={index}
               {...item}
@@ -41,7 +39,7 @@ export const CustomerCasePanel = ({
             查看更多客户案例 →
         </Button>
       </div>
-      <ExpertQRCode title="了解更多客户案例细节" />
+      <ExpertQRCode title="了解更多客户案例细节" QRcodeType='case' />
     </div>
   );
 };

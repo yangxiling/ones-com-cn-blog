@@ -71,6 +71,6 @@
   {
     "title": "下载移动端",
     "isQRCode": true,
-    "qrCodeImage": "/images/qrcode.png"
+    "qrCodeImage": "/assets/images/qrcode.png"
   }
 ]

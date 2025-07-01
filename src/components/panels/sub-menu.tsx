@@ -1,11 +1,9 @@
 import React, {useMemo, useCallback, memo} from 'react';
 import {URL_CONFIG} from '../../const/url-config';
 import get from 'lodash-es/get';
-import {TestCaseLogo, PlanLogo, PerformanceLogo, AutomationLogo, DeskLogo, AccountLogo, TaskLogo, TimeLogo, CopilotLogo} from '@ones-design/icons';
+import {TestCaseLogo, PlanLogo, PerformanceLogo, AutomationLogo, DeskLogo, AccountLogo, TaskLogo, TimeLogo, CopilotLogo,ProjectLogo, WikiLogo} from '@ones-design/icons';
 import styles from './index.module.scss';
-
-// 导入图标组件
-import {ProjectLogo, WikiLogo} from '@ones-design/icons';
+import { ImageMapper } from './image-mapper';
 
 // 图标映射 - 使用 useMemo 缓存
 const iconMap: Record<string, React.ComponentType> = {
@@ -82,56 +80,41 @@ const buildFullLink = (link: string, isExternalLink: boolean) => {
 };
 
 // 渲染图片内容组件
-const ImageContent = memo(({itemIconUrl, itemName, submenuItemImgClassName}: {
-  itemIconUrl: string;
+const ImageContent = memo(({itemName, submenuItemImgClassName, originalUrl, itemImgKey}: {
   itemName: string;
   submenuItemImgClassName: string;
+  originalUrl?: string;
+  itemImgKey: string;
 }) => (
-  <img
+  <ImageMapper
+    originalUrl={originalUrl}
+    itemImgKey={itemImgKey}
     className={submenuItemImgClassName}
+    alt={itemName}
     height={60}
     width={180}
-    alt={itemName}
-    src={itemIconUrl}
   />
 ));
 
 // 渲染文本内容组件
-const IconWithText = memo(({itemName, itemDesc, submenuItemClassName, submenuItemImgClassName, itemIconUrl, itemLogo}: {
-  itemName: string;
-  itemDesc: string;
-  submenuItemClassName?: string;
-  submenuItemImgClassName?: string;
-  itemIconUrl: string;
-  itemLogo?: string;
+// const IconWithText = memo(({itemName, itemDesc, submenuItemClassName, submenuItemImgClassName, itemLogo}: {
+//   itemName: string;
+//   itemDesc: string;
+//   submenuItemClassName?: string;
+//   submenuItemImgClassName?: string;
+//   itemLogo?: string;
 
-}) => {
-  const renderIcon = () => {
-    if (itemLogo && iconMap[itemLogo]) {
-      const IconComponent = iconMap[itemLogo];
-      return <IconComponent />;
-    }
-    return <img src={itemIconUrl} alt="icon" />;
-  };
+// }) => {
 
-  return (
-    <div className={submenuItemClassName}>
-      <div className={submenuItemImgClassName}>
-        {renderIcon()}
-      </div>
-      <div>
-        <div className={styles.name}>{itemName}</div>
-        {itemDesc && <div className={styles.desc}>{itemDesc}</div>}
-      </div>
-    </div>
-  );
-});
+//   return (
+
+//   );
+// });
 
 // 单个菜单项组件
 const MenuItemComponent = memo(({
   item,
   index,
-  itemNameKey,
   itemImgKey,
   submenuItemClassName,
   submenuItemImgClassName,
@@ -140,13 +123,15 @@ const MenuItemComponent = memo(({
 }: {
   item: MenuItem;
   index: number;
-  itemNameKey: string;
   itemImgKey: string;
   submenuItemClassName?: string;
   submenuItemImgClassName?: string;
   onlyImg?: boolean;
   getLink: (item: MenuItem) => string | undefined;
-}) => {
+  }) => {
+
+  const {name = '', desc = '', logo} = item;
+
   // 使用 useMemo 缓存计算结果
   const linkData = useMemo(() => {
     const link = getLink(item);
@@ -155,13 +140,26 @@ const MenuItemComponent = memo(({
     return {link, isExternalLink, fullLink};
   }, [item, getLink]);
 
-  const itemData = useMemo(() => {
-    const itemName = get(item, itemNameKey);
-    const itemIconUrl = get(item, itemImgKey)?.replace('/blog/uploads/2022/12', '') || '';
-    const itemDesc = get(item, 'desc') || '';
-    const itemLogo = get(item, 'logo') || '';
-    return {itemName, itemIconUrl, itemDesc, itemLogo};
-  }, [item, itemNameKey, itemImgKey]);
+  // const itemData = useMemo(() => {
+  //   const itemName = get(item, itemNameKey);
+  //   const itemDesc = get(item, 'desc') || '';
+  //   const itemLogo = get(item, 'logo') || '';
+    
+  //   // 处理图片路径
+  //   let itemIconUrl = '';
+  //   const originalUrl = get(item, itemImgKey);
+  //   if (originalUrl) {
+  //     // 如果是客户案例，使用本地图片
+  //     if (itemImgKey.includes('customerLogo')) {
+  //       const fileName = originalUrl.split('/').pop(); // 获取文件名
+  //       itemIconUrl = `/assets/${fileName}`;
+  //     } else {
+  //       itemIconUrl = originalUrl;
+  //     }
+  //   }
+    
+  //   return {itemName, itemIconUrl, itemDesc, itemLogo};
+  // }, [item, itemNameKey, itemImgKey]);
 
   // 使用 useCallback 缓存点击处理函数
   const handleClick = useCallback(() => {
@@ -176,33 +174,40 @@ const MenuItemComponent = memo(({
   }, [item, getLink]);
 
   const itemContent = useMemo(() => {
-    if (onlyImg) {
-      return (<ImageContent
-        itemIconUrl={itemData.itemIconUrl}
-        itemName={itemData.itemName}
-        submenuItemImgClassName={submenuItemImgClassName || ''} />
+
+    if (logo) {
+      return (<div className={`${styles.item} ${submenuItemClassName} `}>
+        <div className={`${styles.icon} ${submenuItemImgClassName}`}>
+          {logo && iconMap[logo] && React.createElement(iconMap[logo])}
+        </div>
+        <div>
+          <div className={styles.name}>{name}</div>
+          {<div className={styles.desc}>{desc}</div>}
+        </div>
+      </div>
       );
     }
 
-    if ((item.icon && item.icon.sourceUrl) || item.logo) {
-      return (<IconWithText
-        itemName={itemData.itemName}
-        itemDesc={itemData.itemDesc}
-        submenuItemClassName={submenuItemClassName || ''}
-        submenuItemImgClassName={submenuItemImgClassName || ''}
-        itemIconUrl={itemData.itemIconUrl}
-        itemLogo={itemData.itemLogo}
-      />
-      );
-    }
+    return (<div className={`${styles.pureText} ${styles.name}`}>{name}</div>);
 
-    return (<div className={styles.item}>{itemData.itemName}</div>);
+  }, [submenuItemImgClassName, submenuItemClassName, logo, name, desc]);
 
-  }, [onlyImg, itemData, submenuItemImgClassName, submenuItemClassName, item.icon, item.logo]);
+
+  if (onlyImg) {
+    return (
+      <div className={styles.imgWrapper}>
+        <ImageContent
+          itemName={name}
+          submenuItemImgClassName={styles.img}
+          originalUrl={get(item, itemImgKey)}
+          itemImgKey={itemImgKey} />
+      </div>
+    );
+  }
 
   return (
     <a
-      className={`${submenuItemClassName} ${styles.link}`}
+      className={`${styles.link}`}
       key={index}
       onClick={handleClick}
       href={linkData.fullLink}
@@ -217,7 +222,6 @@ const MenuItemComponent = memo(({
 export const SubMenu: React.FC<SubMenuItemType> = memo(({
   name,
   menu,
-  itemNameKey = 'name',
   itemImgKey = 'icon.sourceUrl',
   submenuItemClassName,
   submenuItemImgClassName,
@@ -235,7 +239,6 @@ export const SubMenu: React.FC<SubMenuItemType> = memo(({
         key={`${item.name}-${index}`}
         item={item}
         index={index}
-        itemNameKey={itemNameKey}
         itemImgKey={itemImgKey}
         submenuItemClassName={submenuItemClassName}
         submenuItemImgClassName={submenuItemImgClassName}
@@ -243,7 +246,7 @@ export const SubMenu: React.FC<SubMenuItemType> = memo(({
         getLink={getLink}
       />
     ));
-  }, [menu, itemNameKey, itemImgKey, submenuItemClassName, submenuItemImgClassName, onlyImg, getLink]);
+  }, [menu, itemImgKey, submenuItemClassName, submenuItemImgClassName, onlyImg, getLink]);
 
   return (
     <div>

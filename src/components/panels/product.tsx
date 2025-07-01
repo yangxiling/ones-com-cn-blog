@@ -6,6 +6,7 @@ import {ExpertQRCode} from './expert-qrcode';
 import {URL_CONFIG} from '../../const/url-config';
 import styles from './index.module.scss';
 import productStyles from './product.module.scss';
+
 interface MenuSection {
   name: string;
   menu: MenuItem[];
@@ -44,11 +45,9 @@ export const ProductMenuPanel = ({
           )}
         </div>
 
-        <div className={productStyles.apps}>
+        <div>
           <SubMenu
             menuContentClassName={productStyles.apps}
-            submenuItemClassName={productStyles.app}
-            submenuItemImgClassName={productStyles.icon}
             {...menu.app}
           />
           <Button
@@ -63,6 +62,7 @@ export const ProductMenuPanel = ({
       </div>
       <ExpertQRCode
         title="了解更多产品细节"
+        QRcodeType='product'
       />
     </div>
 

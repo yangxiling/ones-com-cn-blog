@@ -129,6 +129,7 @@
         "menu": [
           {
             "fieldGroupName": "menu",
+            "name": "金融业研发管理",
             "resolve": {
               "id": "cG9zdDo3Mzk3",
               "slug": "financial",
@@ -142,6 +143,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "智能制造研发管理",
             "resolve": {
               "id": "cG9zdDo3NDAw",
               "slug": "intelligent-manufacturing",
@@ -155,6 +157,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "企业服务研发管理",
             "resolve": {
               "id": "cG9zdDo3NDc2",
               "slug": "enterprise-services",
@@ -168,6 +171,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "汽车研发项目管理",
             "resolve": {
               "id": "cG9zdDo3NDcz",
               "slug": "automobile",
@@ -181,6 +185,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "装备制造项目管理",
             "resolve": {
               "id": "cG9zdDo3NDc0",
               "slug": "equipment-manufacturing",
@@ -199,6 +204,7 @@
         "menu": [
           {
             "fieldGroupName": "menu",
+            "name": "敏捷研发管理",
             "resolve": {
               "id": "cG9zdDoyMjUz",
               "slug": "scrum",
@@ -215,6 +221,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "企业知识库管理",
             "resolve": {
               "id": "cG9zdDoyNTYx",
               "slug": "wiki",
@@ -231,6 +238,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "瀑布项目管理",
             "resolve": {
               "id": "cG9zdDoyNTgz",
               "slug": "waterfall",
@@ -247,6 +255,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "测试管理",
             "resolve": {
               "id": "cG9zdDoyNjEx",
               "slug": "testcase",
@@ -263,6 +272,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "研发效能管理",
             "resolve": {
               "id": "cG9zdDoyNjE2",
               "slug": "performance",
@@ -279,6 +289,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "DevOps",
             "resolve": {
               "id": "cG9zdDoyNjI2",
               "slug": "devops",
@@ -295,6 +306,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "资源和工时管理",
             "resolve": {
               "id": "cG9zdDoyNjc4",
               "slug": "resource-time",
@@ -311,6 +323,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "服务台和工单管理",
             "resolve": {
               "id": "cG9zdDoyNjc5",
               "slug": "desk",
@@ -327,6 +340,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "IPD 研发管理",
             "resolve": {
               "id": "cG9zdDo3MzQ3",
               "slug": "ipd",
@@ -348,6 +362,7 @@
         "menu": [
           {
             "fieldGroupName": "menu",
+            "name": "开放能力",
             "resolve": {
               "id": "cG9zdDoyNzEw",
               "slug": "development",
@@ -361,6 +376,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "部署方式",
             "resolve": {
               "id": "cG9zdDoyNzMx",
               "slug": "deployment",
@@ -374,6 +390,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "从 Jira 迁移到 ONES",
             "resolve": {
               "id": "cG9zdDoyNjY0",
               "slug": "data-import",
@@ -387,6 +404,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "安全与合规",
             "resolve": {
               "id": "cG9zdDoyNjY1",
               "slug": "security-and-compliance",
@@ -400,6 +418,7 @@
           },
           {
             "fieldGroupName": "menu",
+            "name": "信创",
             "resolve": {
               "id": "cG9zdDoyNjcw",
               "slug": "information-technology-innovation",
@@ -431,7 +450,7 @@
                   "id": "cG9zdDoyNDIz",
                   "acfCustomer": {
                     "customerLogo": {
-                      "sourceUrl": "/blog/uploads/2022/12/深圳农商银行.png"
+                      "sourceUrl": "../assets/深圳农商银行.png"
                     }
                   }
                 }

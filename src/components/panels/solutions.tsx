@@ -4,7 +4,6 @@ import type {MenuItem} from './sub-menu';
 import styles from './index.module.scss';
 import solutionsStyles from './solutions.module.scss';
 
-// import ExpertForProduct from '../../images/expert-for-product.png'; // Using a placeholder for now
 
 interface SolutionMenu {
   name: string;
@@ -26,7 +25,6 @@ export const SolutionsPanel = ({
           {...menu[0]}
           itemNameKey="resolve.acfSolution.solutionTitle"
           menuContentClassName={solutionsStyles.content}
-          submenuItemClassName={solutionsStyles.item}
           getLink={(item: MenuItem) => `/solutions/${item.resolve?.slug}`}
         />
 
@@ -36,7 +34,6 @@ export const SolutionsPanel = ({
           itemNameKey="resolve.acfSolution.solutionTitle"
           getLink={(item: MenuItem) => `/solutions/${item.resolve?.slug}`}
           menuContentClassName={solutionsStyles.sceneContent}
-          submenuItemClassName={solutionsStyles.sceneItem}
         />
 
         <SubMenu
@@ -45,12 +42,12 @@ export const SolutionsPanel = ({
           itemNameKey="resolve.acfSolution.solutionTitle"
           getLink={(item: MenuItem) => `/solutions/${item.resolve?.slug}`}
           menuContentClassName={solutionsStyles.content}
-          submenuItemClassName={solutionsStyles.item}
         />
 
       </div>
       <ExpertQRCode
         title="了解更多解决方案"
+        QRcodeType='QRcode'
       />
     </div>
 
