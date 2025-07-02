@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'react-build',
     sourcemap: true,
-    assetsInlineLimit: 10240,// 10KB，小于此大小的图片会被内联为 base64
+    assetsInlineLimit: Infinity, // 所有图片都会被内联为 base64
     rollupOptions: {
       input: {
         header: './src/entry/header.tsx',

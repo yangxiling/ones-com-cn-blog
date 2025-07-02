@@ -1,8 +1,8 @@
 .left {
   display: flex;
   justify-content: space-between;
-  border-right: 1px solid #F0F0F2;
-  padding: 40px 40px 40px 0;
+
+  // padding: 40px 40px 20px 0;
   gap: 45px;
 }
 
@@ -43,3 +43,24 @@
 //     background: var(--Blue-5, #F2F7FF);
 //   }
 // }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: start;
+  padding: 40px 40px 20px 0;
+  border-right: 1px solid #F0F0F2;
+}
+
+.button {
+  background-color: #f0f0f266;
+  min-height: 50px;
+  border: none !important;
+  color: #0064ff;
+
+  &:hover {
+    color: #0032BE !important;
+    background-color: #f0f0f266 !important;
+  }
+}

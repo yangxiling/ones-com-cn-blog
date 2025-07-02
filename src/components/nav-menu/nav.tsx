@@ -27,6 +27,7 @@ export const NavMenu = React.memo(() => {
         </div>
         <div className={styles.right}>
           <Button
+            style={{borderRadius: '16px'}}
             onClick={handleBtnClick}
             type="default"
             className={styles.phone}
@@ -35,7 +36,7 @@ export const NavMenu = React.memo(() => {
             400-666-1399
 
           </Button>
-          <Button type="link" className={styles.login} href='https://ones.cn/identity/login'>登录</Button>
+          <a type="link" className={styles.login} href='https://ones.cn/identity/login'>登录</a>
           <Button type="primary" className={styles.trial} onClick={handleTrialClick}>免费试用</Button>
         </div>
       </div>

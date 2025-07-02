@@ -50,13 +50,28 @@
   color: var(--blue-700);
 }
 
+button {
+  min-height: 32px !important;
+}
+
 .login {
   font-size: 16px;
+  color: #0064ff;
+  margin: 0 20px;
+}
+
+a{
+  color: #0064ff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .trial {
   width: 114px;
-  height: 40px;
+  min-height: 40px !important;
   padding: 8px 24px;
   font-size: 16px;
 }

@@ -38,7 +38,12 @@
   // height: 50vh;
 }
 
+.link {
+  text-decoration: none;
+  color: var(--Gray-Gray1-, #16171A);
+}
+
 .link:hover {
   text-decoration: none;
-  color: var(--bue-700, #0056FF);
+  color: var(--bue-700, #0056FF)!important;
 }

@@ -4,9 +4,13 @@ import styles from './footer.module.scss';
 import OnesLogo from '../../assets/images/ones-logo.svg';
 import {Phone} from '@ones-design/icons';
 import {URL_CONFIG } from '../../const/url-config';
-import WechatIcon from '../../assets/images/wechat.svg';
-import ZhihuIcon from '../../assets/images/zhihu.svg';
-import BilibiliIcon from '../../assets/images/bilibili.svg';
+import ZhihuIcon from '../../assets/footer-zhihu.png';
+import BilibiliIcon from '../../assets/footer-bilibili.png';
+// 导入 footer 相关的图片
+import OnesAppQRCode from '../../assets/ones-app-qrcode.png';
+import FooterCatalog from '../../assets/footer-catalog.png';
+import FooterMail from '../../assets/footer-mail.png';
+import FooterWechat from '../../assets/footer-wechat.png';
 
 interface Link {
   name: string;
@@ -36,7 +40,7 @@ export const Footer = () => {
             <div key={index} className={`${styles.column} ${column.isQRCode ? styles.qrcodeColumn : ''}`}>
               <h5>{column.title}</h5>
               {column.isQRCode ? (
-                <img src='/ones-app-qrcode.png' alt="QR Code" style={{width: '100px', height: '100px'}} />
+                <img src={OnesAppQRCode} alt="QR Code" style={{width: '100px', height: '100px'}} />
               ) : (
                 <>
                   <ul>
@@ -61,7 +65,7 @@ export const Footer = () => {
         {/* 底部链接 */}
         <div className={styles.subFooter}>
           <div className={styles.linksContact}>
-            <img src='/footer-catalog.png' alt="email" />
+            <img src={FooterCatalog} alt="email" />
             <a href={`${URL_CONFIG.baseUrl}/terms`} className={styles.contactItem}>服务条款</a>
             <a href={`${URL_CONFIG.baseUrl}/privacy`} className={styles.contactItem}>隐私政策</a>
             <a href="tel:400-666-1399" className={styles.contactItem}>
@@ -69,16 +73,16 @@ export const Footer = () => {
               400-666-1399
             </a>
             
-            <a href="mailto:support@ones.cn" className={styles.contactItem}> <img style={{marginRight: '5px'}} src='/footer-mail.png' alt="email" />support@ones.cn</a>
+            <a href="mailto:support@ones.cn" className={styles.contactItem}> <img style={{marginRight: '5px'}} src={FooterMail} alt="email" />support@ones.cn</a>
           </div>
           <div className={styles.socialIcons}>
-            <img src='/footer-wechat.png' alt="微信" />
+            <img src={FooterWechat} alt="微信" />
       
             <a href="https://www.zhihu.com/org/ones-57-5" target="_blank" rel="noopener noreferrer">
-              <img src='/footer-zhihu.png' alt="知乎" />
+              <img src={ZhihuIcon} alt="知乎" />
             </a>
             <a href="https://space.bilibili.com/1399336503" target="_blank" rel="noopener noreferrer">
-              <img src='/footer-bilibili.png' alt="Bilibili" />
+              <img src={BilibiliIcon} alt="Bilibili" />
             </a>
           </div>
         </div>

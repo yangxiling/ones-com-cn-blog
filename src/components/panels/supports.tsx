@@ -3,7 +3,6 @@ import type {MenuItem} from './sub-menu';
 import {ArrowRight} from '@ones-design/icons'
 import styles from './index.module.scss';
 import supportsStyles from './supports.module.scss';
-import { URL_CONFIG } from '../../const/url-config';
 
 // 导入图片
 import supportImg from '../../assets/images/support.webp';
