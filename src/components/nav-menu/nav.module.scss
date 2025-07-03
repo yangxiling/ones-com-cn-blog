@@ -13,7 +13,6 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  font-family: "Plus Jakarta Sans" !important;
 }
 
 .navbar {
@@ -40,13 +39,10 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  font-family: "Plus Jakarta Sans";
 }
 
 .text {
   color: var(--Gray-Gray3, #696A6D);
-  /* 导航内部文字、正文 */
-  font-family: "Plus Jakarta Sans";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -62,7 +58,6 @@
   text-align: center;
   border-radius: 3px;
   background: var(---1, #0064FF);
-  font-family: "Plus Jakarta Sans";
 
   &:hover {
     color: #fff;
