@@ -1,7 +1,6 @@
 import {StrictMode } from 'react';
 import { NavMenu } from '../components/nav-menu/nav';
 import { createRoot } from 'react-dom/client';
-import '../styles/global.scss';
 
 const mountNav = (elementId: string) => {
   console.log('0headercontainer', elementId);
