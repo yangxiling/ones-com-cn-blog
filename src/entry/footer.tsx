@@ -1,7 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import { StrictMode } from 'react';
 import { Footer } from '../components/footer/footer';
-import '../styles/global.scss';
 
 const mountFooter = (elementId: string) => {
   const container = document.getElementById(elementId);
