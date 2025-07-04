@@ -1,0 +1,58 @@
+.product {
+  display: flex;
+}
+
+.productFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  margin-right: 20px;
+
+}
+
+// 第一个子元素
+.productFeaturesItem:nth-child(1) {
+  background-image: url('../../assets/nav_project_normal.png');
+
+  &:hover {
+    background-image: url('../../assets/nav_project_hover.png');
+  }
+}
+
+// 第二个子元素
+.productFeaturesItem:nth-child(2) {
+  background-image: url('../../assets/nav_wiki_normal.png');
+
+  &:hover {
+    background-image: url('../../assets/nav_wiki_hover.png');
+  }
+}
+
+.productFeaturesItem {
+  width: 300px;
+  height: 110px;
+  padding-right: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+
+.productMiddle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 560px;
+}
+
+.productAddons {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  width: 280px;
+  height: 100px;
+}
