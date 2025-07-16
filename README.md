@@ -35,13 +35,13 @@ npm run build
 构建完成后，`dist` 目录将包含以下文件：
 - `header.js` - Header 组件
 - `footer.js` - Footer 组件
-- `assets/` - CSS 样式文件
+- `assets/` - 素材
 
 ## WordPress 集成
 
 ### 自动部署
 
-使用提供的部署脚本：
+（todo）使用提供的部署脚本：
 
 ```bash
 ./deploy-wordpress.sh /path/to/your/wordpress/theme
@@ -49,7 +49,7 @@ npm run build
 
 ### 手动集成
 
-1. 将 `dist` 目录中的所有文件复制到你的 WordPress 主题目录下的 `react-build` 文件夹中
+1. 将打包文件 `react-build` 目录中的所有文件复制到你的 WordPress 主题目录下的 `react-build` 文件夹中
 
 2. 在你的主题的 `header.php` 中添加：
 
